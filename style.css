@@ -209,8 +209,9 @@ button:active {
   background-color: #008552;
 }
 
-.ss {
-  margin-left: 28%;
+.ml {
+  display: flex;
+  justify-self: center;
 }
 
 .forms {
