@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -26,7 +30,6 @@ a {
 .top {
   display: flex;
   align-items: center;
-  list-style: none;
   justify-content: space-between;
   z-index: -1;
 }
@@ -40,7 +43,8 @@ a {
 }
 
 .bg {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   background-image: url(images/background.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -91,7 +95,6 @@ h2 {
 
 .social_media {
   display: flex;
-  list-style: none;
   justify-content: center;
 }
 
@@ -122,8 +125,6 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
-  max-width: 100%;
   border-radius: 0.5em;
 }
 
@@ -137,7 +138,6 @@ h2 {
 
 .col {
   background-color: white;
-  list-style: none;
   padding: 0.5em;
   margin: 0.5em;
   border-radius: 0.5em;
@@ -155,7 +155,6 @@ h2 {
 
 .technologies {
   display: flex;
-  list-style: none;
   justify-content: center;
   padding-left: 0;
 }
@@ -195,11 +194,27 @@ button {
   margin-bottom: 0.5em;
 }
 
-.button:hover,
-button:hover {
-  background-color: #008552;
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-  border-radius: 4px;
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.forms>* {
+  width: 100%;
+  margin-top: 1em;
+}
+
+input[type=submit] {
+  width: 50%;
+  justify-self: center;
+
+}
+
+.message_box {
+  height: 6em;
+  margin-top: 0;
 }
 
 .button:active,
@@ -209,33 +224,25 @@ button:active {
   background-color: #008552;
 }
 
+.button:hover,
+button:hover {
+  background-color: #008552;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+
 .ml {
   display: flex;
   justify-self: center;
 }
 
-.forms {
-  display: grid;
-  justify-content: center;
-}
-
-.message_box {
-  margin-bottom: 10%;
-  border: 1px solid #008552;
-  height: 6em;
-}
-
-.input_one {
-  border: 1px solid #ebf0ee;
-  padding: 0.5em;
-}
-
-.l-shape {
-  background-image: url(images/bottom-l.svg);
+/* .l-shape {
+  background-image: url(images/mid-section-l.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline;
-}
+} */
 
 .diamond {
   display: grid;
@@ -245,6 +252,7 @@ button:active {
 @media (min-width: 769px) {
   .wrapper {
     padding: 1em;
+    margin: 0px auto;
   }
 
   .bg {
@@ -252,6 +260,7 @@ button:active {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100vh;
   }
 
   .mobile {
@@ -260,6 +269,7 @@ button:active {
 
   .desktop {
     display: block;
+    padding: 0;
   }
 
   .second-paragraph {
@@ -272,7 +282,6 @@ button:active {
   .head {
     display: flex;
     justify-content: center;
-    list-style: none;
   }
 
   .dt {
@@ -290,4 +299,67 @@ button:active {
     text-decoration: none;
     color: #344563;
   }
+
+  .grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .col-two {
+    width: 80%;
+  }
+
+  .its-time-to-flex {
+    display: flex;
+    width: 100%;
+
+  }
+
+  .forms {
+    display: inline;
+    width: 100%;
+    margin: 1em;
+  }
+
+  input[type=text] {
+    display: inline;
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    margin: .5em;
+
+  }
+
+  input[class=input_two],
+  textarea {
+    width: 89%;
+    padding: 12px;
+    margin: .5em;
+  }
+
+  .message_box {
+    width: 89%;
+  }
+
+  input[type=submit] {
+    width: 50%;
+    margin: .5em;
+  }
+
+  .bottom-images {
+    display: flex;
+    margin-top: -25%;
+  }
+
+  .mid-images {
+    position: absolute;
+  }
+
+  .ola {
+    margin-top: -15%;
+  }
+
+
 }
