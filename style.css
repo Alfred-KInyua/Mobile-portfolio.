@@ -90,10 +90,13 @@ h4 {
 }
 
 .second-paragraph {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
 }
+
+
 
 .social_media {
   display: flex;
@@ -181,8 +184,7 @@ h4 {
   text-align: center;
 }
 
-.button,
-button {
+.btn {
   display: flex;
   justify-self: center;
   flex: 0 1 auto;
@@ -194,6 +196,7 @@ button {
   text-decoration: none;
   font-size: 16px;
   margin-bottom: 0.5em;
+  border-radius: 4px;
 }
 
 .forms {
@@ -212,22 +215,30 @@ input[type=submit] {
   justify-self: center;
 }
 
+input[type=text],
+input[type=email],
+.message_box {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0.5em;
+}
+
 .message_box {
   height: 6em;
   margin-top: 0;
+  border: 1px solid #008552;
 }
 
-.button:active,
-button:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-  background-color: #008552;
-}
-
-.button:hover,
-button:hover {
-  background-color: #008552;
+.btn:hover {
+  background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+.btn:active,
+.btn:target {
+  background: #008552;
   border-radius: 4px;
 }
 
@@ -236,12 +247,11 @@ button:hover {
   justify-self: center;
 }
 
-/* .l-shape {
-  background-image: url(images/mid-section-l.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline;
-} */
+.l-shaped-images {
+  position: absolute;
+  left: 82%;
+  transform: translate(14px, -47px);
+}
 
 .diamond {
   display: grid;
@@ -342,6 +352,18 @@ button:hover {
   input[type=submit] {
     width: 50%;
     margin: 0.5em;
+  }
+
+
+  .btn:hover {
+    background: #36b37f;
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+    border-radius: 4px;
+  }
+
+  .btn:active {
+    background-color: #008552;
+    border-radius: 4px;
   }
 
   .bottom-images {
