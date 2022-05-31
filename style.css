@@ -67,7 +67,9 @@ p {
   letter-spacing: 0.03em;
 }
 
-h2 {
+h2,
+h3,
+h4 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -198,10 +200,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.forms>* {
+.forms > * {
   width: 100%;
   margin-top: 1em;
 }
@@ -209,7 +210,6 @@ button {
 input[type=submit] {
   width: 50%;
   justify-self: center;
-
 }
 
 .message_box {
@@ -231,7 +231,6 @@ button:hover {
   border-radius: 4px;
 }
 
-
 .ml {
   display: flex;
   justify-self: center;
@@ -252,7 +251,7 @@ button:hover {
 @media (min-width: 769px) {
   .wrapper {
     padding: 1em;
-    margin: 0px auto;
+    margin: 0 auto;
   }
 
   .bg {
@@ -312,7 +311,6 @@ button:hover {
   .its-time-to-flex {
     display: flex;
     width: 100%;
-
   }
 
   .forms {
@@ -327,16 +325,14 @@ button:hover {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-
-    margin: .5em;
-
+    margin: 0.5em;
   }
 
   input[class=input_two],
   textarea {
     width: 89%;
     padding: 12px;
-    margin: .5em;
+    margin: 0.5em;
   }
 
   .message_box {
@@ -345,7 +341,7 @@ button:hover {
 
   input[type=submit] {
     width: 50%;
-    margin: .5em;
+    margin: 0.5em;
   }
 
   .bottom-images {
@@ -360,6 +356,4 @@ button:hover {
   .ola {
     margin-top: -15%;
   }
-
-
 }
