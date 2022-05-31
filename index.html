@@ -204,14 +204,13 @@
                 so if you'd like to chat please get in touch.</p>
             <!-- contact form -->
             <form  action="https://formspree.io/f/mknypyqz" method="POST" class="forms">
-                <input type="text" id="fname" name="fname" class="input_one" placeholder="First name">
-                <input type="text" id="lname" name="lname" class="input_one last-input desktop" placeholder="Last name">
-                <input type="email" id="ename" name="email-address" class="input_two" placeholder="Email address"><br><br>
-                <textarea id="message" name="message" class="message_box" placeholder="Enter text here here"></textarea>
+                <input type="text" id="fname" name="name" class="input_one" placeholder="First name" required maxlength="30">
+                <input type="text" id="lname" name="name" class="input_one last-input desktop" placeholder="Last name" required maxlength="30">
+                <input type="email" required name="_replyto" class="input_two" placeholder="Email address" required><br><br>
+                <textarea id="message" name="message" class="message_box" placeholder="Enter text here here" required maxlength="500"></textarea>
                 <input type="submit" class="button small-button" value="Get in touch">
             </form>
 
-            </div>
             <img src="images/desktop-bottom-left.svg" alt="" class="desktop">
       
 
