@@ -1,17 +1,44 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# MObile Portfolio Project
+# Desktop Portfolio Project
 
-> This project demonstrates how to use Flex box to design a dynamic mobile portfolio page.
-For quality assurance, linters and code reviewers were engaged 
-
+> This project demonstrates how to use Flex box and Grid to build a dynamic desktop portfolio page.For quality assurance, linters and code reviewers were engaged. 
 
 
 ## Built With
 
+
 - HTML & CSS
 - Github flow
 - VSCode
+
+## Live Demo (if available)
+
+[Live Demo Link](https://livedemo.com)
+
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+For this project you don't need aditional tools
+
+### Setup
+Fork a copy to your repository
+
+### Install
+Clone the repository on your local enviroment and run npm i on your terminal
+
+### Usage
+To start the dev server just run npm run dev. You can work in your favorite Code Editor
+
+
+computeriphone Live Preview
+If you want to see a live demo of this project, [click here] (https://alfred-kinyua.github.io/Mobile-portfolio./) click here
+
+
+
 
 
 ## Author
@@ -34,11 +61,6 @@ Feel free to check the [issues page](https://github.com/Alfred-KInyua/Mobile-por
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
