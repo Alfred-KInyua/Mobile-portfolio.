@@ -114,7 +114,7 @@ h4 {
 .top-card-one {
   display: grid;
   justify-content: center;
-}
+ }
 
 .bd {
   border: 1px solid #ebf0ee;
@@ -214,7 +214,6 @@ input[type=submit] {
 }
 
 input[type=text],
-input[type=email],
 .message_box {
   padding: 12px;
   border: 1px solid #ccc;
@@ -327,26 +326,24 @@ input[type=email],
     margin: 1em;
   }
 
-  input[type=text] {
-    display: inline;
-    width: 40%;
+  input[type=text],
+  input[type=email] {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin: 0.5em;
   }
+  input[type=email]{
+  width: 100%;
+  }
 
-  input[class=input_two],
-  textarea {
-    width: 89%;
+  
+  textarea {  
     padding: 12px;
     margin: 0.5em;
   }
 
-  .message_box {
-    width: 89%;
-  }
-
+ 
   input[type=submit] {
     width: 50%;
     margin: 0.5em;
@@ -370,6 +367,7 @@ input[type=email],
 
   .mid-images {
     position: absolute;
+    z-index: -1;
   }
 
   .ola {
