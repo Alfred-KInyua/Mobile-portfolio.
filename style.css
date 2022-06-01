@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -26,7 +30,6 @@ a {
 .top {
   display: flex;
   align-items: center;
-  list-style: none;
   justify-content: space-between;
   z-index: -1;
 }
@@ -40,7 +43,8 @@ a {
 }
 
 .bg {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   background-image: url(images/background.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -63,7 +67,9 @@ p {
   letter-spacing: 0.03em;
 }
 
-h2 {
+h2,
+h3,
+h4 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -84,6 +90,7 @@ h2 {
 }
 
 .second-paragraph {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -91,7 +98,6 @@ h2 {
 
 .social_media {
   display: flex;
-  list-style: none;
   justify-content: center;
 }
 
@@ -122,8 +128,6 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: auto;
-  max-width: 100%;
   border-radius: 0.5em;
 }
 
@@ -137,7 +141,6 @@ h2 {
 
 .col {
   background-color: white;
-  list-style: none;
   padding: 0.5em;
   margin: 0.5em;
   border-radius: 0.5em;
@@ -155,7 +158,6 @@ h2 {
 
 .technologies {
   display: flex;
-  list-style: none;
   justify-content: center;
   padding-left: 0;
 }
@@ -180,8 +182,7 @@ h2 {
   text-align: center;
 }
 
-.button,
-button {
+.btn {
   display: flex;
   justify-self: center;
   flex: 0 1 auto;
@@ -193,20 +194,49 @@ button {
   text-decoration: none;
   font-size: 16px;
   margin-bottom: 0.5em;
+  border-radius: 4px;
 }
 
-.button:hover,
-button:hover {
-  background-color: #008552;
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forms > * {
+  width: 100%;
+  margin-top: 1em;
+}
+
+input[type=submit] {
+  width: 50%;
+  justify-self: center;
+}
+
+input[type=text],
+.message_box {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0.5em;
+}
+
+.message_box {
+  height: 6em;
+  margin-top: 0;
+  border: 1px solid #008552;
+}
+
+.btn:hover {
+  background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   border-radius: 4px;
 }
 
-.button:active,
-button:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-  background-color: #008552;
+.btn:active,
+.btn:target {
+  background: #008552;
+  border-radius: 4px;
 }
 
 .ml {
@@ -214,27 +244,10 @@ button:active {
   justify-self: center;
 }
 
-.forms {
-  display: grid;
-  justify-content: center;
-}
-
-.message_box {
-  margin-bottom: 10%;
-  border: 1px solid #008552;
-  height: 6em;
-}
-
-.input_one {
-  border: 1px solid #ebf0ee;
-  padding: 0.5em;
-}
-
-.l-shape {
-  background-image: url(images/bottom-l.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline;
+.l-shaped-images {
+  position: absolute;
+  left: 82%;
+  transform: translate(14px, -47px);
 }
 
 .diamond {
@@ -245,6 +258,7 @@ button:active {
 @media (min-width: 769px) {
   .wrapper {
     padding: 1em;
+    margin: 0 auto;
   }
 
   .bg {
@@ -252,6 +266,7 @@ button:active {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100vh;
   }
 
   .mobile {
@@ -260,6 +275,7 @@ button:active {
 
   .desktop {
     display: block;
+    padding: 0;
   }
 
   .second-paragraph {
@@ -272,7 +288,6 @@ button:active {
   .head {
     display: flex;
     justify-content: center;
-    list-style: none;
   }
 
   .dt {
@@ -289,5 +304,72 @@ button:active {
   a {
     text-decoration: none;
     color: #344563;
+  }
+
+  .grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .col-two {
+    width: 80%;
+  }
+
+  .its-time-to-flex {
+    display: flex;
+    width: 100%;
+  }
+
+  .forms {
+    display: inline;
+    width: 100%;
+    margin: 1em;
+  }
+
+  input[type=text],
+  input[type=email] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0.5em;
+  }
+
+  input[type=email] {
+    width: 100%;
+  }
+
+  textarea {
+    padding: 12px;
+    margin: 0.5em;
+  }
+
+  input[type=submit] {
+    width: 50%;
+    margin: 0.5em;
+  }
+
+  .btn:hover {
+    background: #36b37f;
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+    border-radius: 4px;
+  }
+
+  .btn:active {
+    background-color: #008552;
+    border-radius: 4px;
+  }
+
+  .bottom-images {
+    display: flex;
+    margin-top: -25%;
+  }
+
+  .mid-images {
+    position: absolute;
+    z-index: -1;
+  }
+
+  .ola {
+    margin-top: -15%;
   }
 }
