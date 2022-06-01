@@ -14,7 +14,8 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://alfred-kinyua.github.io/Mobile-portfolio./) 
+
 
 
 ## Getting Started
@@ -34,11 +35,7 @@ Clone the repository on your local enviroment and run npm i on your terminal
 To start the dev server just run npm run dev. You can work in your favorite Code Editor
 
 
-computeriphone Live Preview
-If you want to see a live demo of this project, [click here] (https://alfred-kinyua.github.io/Mobile-portfolio./) click here
-
-
-
+If you want to see a live demo of this project, [Click here](https://alfred-kinyua.github.io/Mobile-portfolio./) 
 
 
 ## Author
