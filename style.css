@@ -114,7 +114,7 @@ h4 {
 .top-card-one {
   display: grid;
   justify-content: center;
- }
+}
 
 .bd {
   border: 1px solid #ebf0ee;
@@ -333,17 +333,16 @@ input[type=text],
     border-radius: 4px;
     margin: 0.5em;
   }
-  input[type=email]{
-  width: 100%;
+
+  input[type=email] {
+    width: 100%;
   }
 
-  
-  textarea {  
+  textarea {
     padding: 12px;
     margin: 0.5em;
   }
 
- 
   input[type=submit] {
     width: 50%;
     margin: 0.5em;
