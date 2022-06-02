@@ -204,8 +204,8 @@ h4 {
   margin-bottom: 0.5em;
   border-radius: 4px;
   transition-property: font-size;
-  transition-delay: 1s;
-  transition-duration: 1s;
+  transition-delay: 2s;
+  transition-duration: 4s;
 }
 
 .forms {
