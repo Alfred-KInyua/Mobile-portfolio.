@@ -9,6 +9,14 @@ li {
 
 img {
   max-width: 100%;
+  transform: scale(1);
+  transition-property: transform;
+  transition-delay: 2s;
+  transition-duration: 2s;
+}
+
+img:hover {
+  transform: scale(0.9);
 }
 
 a {
@@ -65,7 +73,7 @@ p {
   margin: 0.5em;
   padding: 0.5em;
   letter-spacing: 0.03em;
- }
+}
 
 h2,
 h3,
@@ -79,7 +87,7 @@ h4 {
   text-align: center;
   padding: 0.5em;
   letter-spacing: 0.03em;
- }
+}
 
 .sp {
   line-height: 1.2em;
@@ -376,6 +384,4 @@ input[type=text],
   .ola {
     margin-top: -15%;
   }
-
- 
 }
