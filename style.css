@@ -9,14 +9,15 @@ li {
 
 img {
   max-width: 100%;
-  transform: scale(1);
-  transition-property: transform;
-  transition-delay: 2s;
-  transition-duration: 2s;
+  transform: scale();
+  transition-property: all;
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
 }
 
 img:hover {
-  transform: scale(0.9);
+  transform: scale(1.2);
+  box-shadow: -1px 9px 45px -19px rgba(0, 0, 0, 0.75);
 }
 
 a {
@@ -111,6 +112,13 @@ h4 {
 
 .social {
   margin-right: 2rem;
+  transition-property: all;
+  transition-delay: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.social:hover {
+  transform: rotate(180deg);
 }
 
 .drop-down {
@@ -204,8 +212,8 @@ h4 {
   margin-bottom: 0.5em;
   border-radius: 4px;
   transition-property: font-size;
-  transition-delay: 2s;
-  transition-duration: 4s;
+  transition-delay: 0.5s;
+  transition-duration: 1s;
 }
 
 .forms {
