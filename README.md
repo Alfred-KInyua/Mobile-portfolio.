@@ -12,9 +12,9 @@
 - Github flow
 - VSCode
 
-## Live Demo (if available)
+## Please cLick the link bellow.
 
-[Live Demo Link](https://alfred-kinyua.github.io/Mobile-portfolio./) 
+[Alfred Kinyua Website](https://alfred-kinyua.github.io/Mobile-portfolio./) 
 
 
 
