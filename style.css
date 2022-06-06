@@ -233,8 +233,7 @@ input[type=submit] {
 }
 
 input[type=text],
-.message_box,
-input[type=email] {
+.message_box {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -275,7 +274,6 @@ input[type=email] {
   justify-self: end;
 }
 
-/* -------------------------Media query---------------------------- */
 @media (min-width: 769px) {
   .wrapper {
     padding: 1em;

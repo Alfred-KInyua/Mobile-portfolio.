@@ -39,7 +39,7 @@ If you want to see a live demo of this project, [Click here](https://alfred-kiny
 
 
 ## Author
-Alfred Wanjau Kinyua
+Alfred Kinyua
 
 👤 **Author1**
 
