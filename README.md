@@ -12,7 +12,7 @@
 - Github flow
 - VSCode
 
-## Please cLick the link bellow.
+## Please Click the link bellow.
 
 [Alfred Kinyua Website](https://alfred-kinyua.github.io/Mobile-portfolio./) 
 
