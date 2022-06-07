@@ -1,3 +1,7 @@
+$bg:#008552;
+$goodcontrast: rgb(54, 179, 126);
+$whitebg: rgb(255, 255, 255);
+
 .display_block {
   display: block;
 }
@@ -7,26 +11,21 @@ body {
   padding: 0;
 }
 
+
 li {
   list-style: none;
 }
 
 img {
   max-width: 100%;
-  -webkit-transform: scale();
   transform: scale();
-  -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
-  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 
 img:hover {
-  -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  -webkit-box-shadow: -1px 9px 45px -19px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 9px 45px -19px rgba(0, 0, 0, 0.75);
 }
 
@@ -47,14 +46,8 @@ a {
 }
 
 .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   z-index: -1;
 }
@@ -68,12 +61,7 @@ a {
 }
 
 .bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-image: url(images/background.svg);
   background-repeat: no-repeat;
@@ -116,8 +104,8 @@ h4 {
 }
 
 .paragraph-one {
-  color: #36b37e;
-  background-color: white;
+  color: $goodcontrast;
+  background-color: $whitebg;
 }
 
 .second-paragraph {
@@ -128,56 +116,39 @@ h4 {
 }
 
 .social_media {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .social {
   margin-right: 2rem;
-  -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
-  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 
 .social:hover {
-  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .drop-down {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
 /* card one styling  */
 .top-card-one {
-  display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .bd {
   border: 1px solid #ebf0ee;
-  display: -ms-grid;
   display: grid;
 }
 
 .fit {
   margin-top: 5em;
-  display: -ms-grid;
   display: grid;
   background-image: url(images/ImgPlaholder.png);
   background-position: center;
@@ -187,20 +158,15 @@ h4 {
 }
 
 .col-one {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0;
   margin: 0 auto;
 }
 
 .col {
-  background-color: white;
+  background-color: $whitebg;
   padding: 0.5em;
   margin: 0.5em;
   border-radius: 0.5em;
@@ -217,11 +183,7 @@ h4 {
 }
 
 .technologies {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   padding-left: 0;
 }
@@ -247,40 +209,26 @@ h4 {
 }
 
 .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-self: center;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 auto;
   flex: 0 1 auto;
   background-color: #36b37f;
   border: none;
-  color: white;
+  color: $whitebg;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 18px;
   margin-bottom: 0.5em;
   border-radius: 4px;
-  -webkit-transition-property: font-size;
   transition-property: font-size;
-  -webkit-transition-delay: 0.5s;
   transition-delay: 0.5s;
-  -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
 
 .forms {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -291,7 +239,6 @@ h4 {
 
 input[type=submit] {
   width: 50%;
-  -ms-grid-column-align: center;
   justify-self: center;
 }
 
@@ -312,7 +259,6 @@ input[type=email] {
 
 .btn:hover {
   background: #36b37f;
-  -webkit-box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   border-radius: 4px;
 }
@@ -324,8 +270,6 @@ input[type=email] {
 }
 
 .ml {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-self: center;
 }
@@ -333,26 +277,22 @@ input[type=email] {
 .l-shaped-images {
   position: absolute;
   left: 82%;
-  -webkit-transform: translate(14px, -47px);
   transform: translate(14px, -47px);
 }
 
 .diamond {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-column-align: end;
   justify-self: end;
 }
 
 .dt a {
   text-decoration: none;
-  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .dt a:hover,
 .dt a:focus {
-  color: #008552;
+  color: $bg;
   background-color: #fff;
   font-size: 1.5rem;
 }
@@ -382,24 +322,14 @@ input[type=email] {
   }
 
   .second-paragraph {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     margin: 0 18em;
   }
 
   .head {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
   }
 
@@ -420,9 +350,7 @@ input[type=email] {
   }
 
   .grid-section {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [3];
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -431,8 +359,6 @@ input[type=email] {
   }
 
   .its-time-to-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
@@ -467,7 +393,6 @@ input[type=email] {
 
   .btn:hover {
     background: #36b37f;
-    -webkit-box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
     border-radius: 4px;
     font-size: 26px;
@@ -479,8 +404,6 @@ input[type=email] {
   }
 
   .bottom-images {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: -25%;
   }
