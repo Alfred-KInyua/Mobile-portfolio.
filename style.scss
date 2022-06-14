@@ -46,7 +46,7 @@ a {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 1em;
 }
@@ -318,14 +318,15 @@ input[type=email] {
 }
 
 .nav-items {
+  width: auto;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height:2rem;
   text-align: center;
   color: #344563;
-  margin-right: 0.5em;
+   
 }
 
 .hamburger {
@@ -345,8 +346,7 @@ input[type=email] {
   width: 100vh;
   height: 100vh;
   transform: scale(0);
-  background-color: hsla(113, 85%, 62%, 0.856);
-  backdrop-filter: blur(2px);
+  background-color: white;
   transition: 0.5s cubic-bezier(0.56, 0.075, 0.475, 0.55);
 }
 
@@ -358,7 +358,6 @@ input[type=email] {
   border-bottom: 2px solid black;
   transition: 0.3s ease-out border;
 }
-
 
 /* -------------------------Media query---------------------------- */
 @media (min-width: 769px) {
