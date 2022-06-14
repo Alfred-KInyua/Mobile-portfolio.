@@ -9,12 +9,12 @@ function displayMenuNav() {
 } 
 ham.addEventListener('click', displayMenuNav) // create an event listener to activate the displayNav function
 
-function closeNav(){
+function closedButton(){
     document.querySelector('.mobile-container').classList.remove('active');
     ham.classList.remove('invisible');  
 } 
-closeNow.addEventListener('click', closeNav) //closes the menu nav section
+closeNow.addEventListener('click', closedButton) //closes the menu nav section
 
 menu_Items.forEach((item) => {
-    item.addEventListener('click', closeNav) //closes the menu nav section whenever any menu item is clicked 
+    item.addEventListener('click', closedButton) //closes the menu nav section whenever any menu item is clicked 
 });
