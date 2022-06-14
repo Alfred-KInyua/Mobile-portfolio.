@@ -2,8 +2,8 @@ $bg:#008552;
 $goodcontrast: rgb(54, 179, 126);
 $whitebg: rgb(255, 255, 255);
 
-.display_block {
-  display: block;
+ul {
+  padding: 0;
 }
 
 body {
@@ -44,11 +44,18 @@ a {
   display: none;
 }
 
-.top {
+.navbar {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
-  z-index: -1;
+  padding: 1em;
+}
+
+.mobile-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .top a {
@@ -66,7 +73,7 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
-  z-index: -1;
+  z-index: 1;
 }
 
 .p3,
@@ -284,17 +291,74 @@ input[type=email] {
   justify-self: end;
 }
 
-.dt a {
+.nav-items a {
   text-decoration: none;
   transition: all 0.5s ease-out;
 }
 
-.dt a:hover,
-.dt a:focus {
+.nav-items a:hover,
+.nav-items a:focus {
   color: $bg;
   background-color: #fff;
   font-size: 1.5rem;
 }
+// Mobile menu display
+.mobile-menu-paragraph {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.display-inline {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-items {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #344563;
+  margin-right: 0.5em;
+}
+
+.hamburger {
+  cursor: pointer;
+  transition: 0.25s ease-in;
+  transform: scale(1);
+}
+
+.hamburger.invisible {
+  transform: scale(0);
+}
+
+.mobile-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  transform: scale(0);
+  background-color: hsla(113, 85%, 62%, 0.856);
+  backdrop-filter: blur(2px);
+  transition: 0.5s cubic-bezier(0.56, 0.075, 0.475, 0.55);
+}
+
+.mobile-container.active {
+  transform: scale(1);
+}
+
+.active {
+  border-bottom: 2px solid black;
+  transition: 0.3s ease-out border;
+}
+
 
 /* -------------------------Media query---------------------------- */
 @media (min-width: 769px) {
@@ -303,16 +367,22 @@ input[type=email] {
     margin: 0 auto;
   }
 
+  .mobile-container {
+    display: none;
+  }
+
+  .mobile,
+  .hamburger,
+  .welcome {
+    display: none;
+  }
+
   .bg {
     background-image: url(images/desktopbg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
-  }
-
-  .mobile {
-    display: none;
   }
 
   .desktop {
@@ -325,22 +395,6 @@ input[type=email] {
     justify-content: center;
     align-items: center;
     margin: 0 18em;
-  }
-
-  .head {
-    display: flex;
-    justify-content: center;
-  }
-
-  .dt {
-    margin-right: 1rem;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    text-align: center;
-    color: #344563;
   }
 
   a {

@@ -12,18 +12,19 @@
 
 <body>
     <header>
-        <nav>
-            <ul class="top mobile">
-                <li class="welcome"> <a href="#"> Alfred Kinyua</a></li>
-                <li><a href="#"> <img src="images/Union.svg" alt=""></a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul class=" head desktop">
-                <li class="dt"><a href="#"> Portfolio </a></li>
-                <li class="dt"><a href="#"> About</a></li>
-                <li class="dt"><a href="#"> Contact</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="welcome"><a href="#">Kinyua</a></div>
+            <div class="mobile-container">
+                <img src="images/x.png" alt="close" class="closed">
+                <ul class="mobile-menu">
+                    <li class="nav-items"><a href="#"> Portfolio </a></li>
+                    <li class="nav-items"><a href="#"> About</a></li>
+                    <li class="nav-items"><a href="#"> Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <a href="#"><img src="images/Union.svg" alt="#"></a>
+            </div>
         </nav>
     </header>
 
@@ -236,6 +237,7 @@
         </footer>
 
     </main>
+    <script src="style.js"></script>
 </body>
 
 </html>
