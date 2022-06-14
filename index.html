@@ -12,18 +12,19 @@
 
 <body>
     <header>
-        <nav>
-            <ul class="top mobile">
-                <li class="welcome"> <a href="#"> Alfred Kinyua</a></li>
-                <li><a href="#"> <img src="images/Union.svg" alt=""></a></li>
-            </ul>
-        </nav>
-        <nav>
-            <ul class=" head desktop">
-                <li class="dt"><a href="#"> Portfolio </a></li>
-                <li class="dt"><a href="#"> About</a></li>
-                <li class="dt"><a href="#"> Contact</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="welcome"><a href="#">Kinyua</a></div>
+            <div class="mobile-container">
+               <div class="let-close"><img src="images/x.png" alt="close" class="closed"></div>
+                <ul class="mobile-menu">
+                    <li class="nav-items"><a href="#"> Portfolio </a></li>
+                    <li class="nav-items"><a href="#about"> About</a></li>
+                    <li class="nav-items"><a href="#contact"> Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <a href="#"><img src="images/Union.svg" alt="#"></a>
+            </div>
         </nav>
     </header>
 
@@ -150,7 +151,7 @@
         </div>
         <section class="top-card-one">
             <div>
-                <h2>About Me</h2>
+                <h2 id="about">About Me</h2>
                 <p class="second-paragraph"> I can help you build a product ,
                     feature or website Look through some of
                     my work and experience! If you like what you see
@@ -207,7 +208,7 @@
                 so if you'd like to chat please get in touch.</p>
 
             <!-- Contact Section -->
-            <form action="https://formspree.io/f/mknypyqz" method="post" class="forms">
+            <form action="https://formspree.io/f/mknypyqz" method="post" class="forms" id="contact">
                 <input type="text" id="fname" name="name" placeholder="First name" required maxlength="30">
                 <input type="email" name="_replyto" placeholder="Email address" required><br><br>
                 <textarea id="message" name="message" class="message_box" placeholder="Enter text here here" required
@@ -236,6 +237,7 @@
         </footer>
 
     </main>
+    <script src="style.js"></script>
 </body>
 
 </html>
