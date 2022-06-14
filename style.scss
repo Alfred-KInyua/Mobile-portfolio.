@@ -53,9 +53,8 @@ a {
 
 .mobile-menu {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  flex: 1 1 auto;
 }
 
 .top a {
@@ -318,7 +317,8 @@ input[type=email] {
 }
 
 .nav-items {
-  width: auto;
+  display: flex;
+  flex-direction: column;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -342,11 +342,18 @@ input[type=email] {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vh;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   transform: scale(0);
   background-color: white;
   transition: 0.5s cubic-bezier(0.56, 0.075, 0.475, 0.55);
+}
+
+.mob .closed {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 10%;
 }
 
 .mobile-container.active {
@@ -354,7 +361,6 @@ input[type=email] {
 }
 
 .active {
-  border-bottom: 2px solid black;
   transition: 0.3s ease-out border;
 }
 
