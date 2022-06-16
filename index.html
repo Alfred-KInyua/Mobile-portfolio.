@@ -15,7 +15,7 @@
         <nav class="navbar">
             <div class="welcome"><a href="#">Kinyua</a></div>
             <div class="mobile-container">
-               <div class="let-close"><img src="images/x.png" alt="close" class="closed"></div>
+                <div class="let-close" javascript:void(0)><img src="images/x.png" alt="close" class="closed"></div>
                 <ul class="mobile-menu">
                     <li class="nav-items"><a href="#"> Portfolio </a></li>
                     <li class="nav-items"><a href="#about"> About</a></li>
@@ -61,7 +61,7 @@
                         <li class="tech"><a href=""> java script </a></li>
                         <li class="tech"><a href=""> html </a></li>
                     </ul>
-                    <button class="btn">See Projects</button>
+                    <button type="button btn" data-modal-target="#project1" class="btn">See Project</button>
                 </div>
             </div>
 
@@ -77,7 +77,7 @@
                         <li class="tech"><a href=""> java script </a></li>
                         <li class="tech"><a href=""> html </a></li>
                     </ul>
-                    <button class="btn">See Projects</button>
+                    <button type="button btn" data-modal-target="#project2" class="btn">See Project</button>
                 </div>
                 <!-- Card three -->
             </div>
@@ -93,7 +93,7 @@
                         <li class="tech"><a href=""> java script </a></li>
                         <li class="tech"><a href=""> html </a></li>
                     </ul>
-                    <button class="btn">See Projects</button>
+                    <button type="button btn" data-modal-target="#project3" class="btn">See Project</button>
                 </div>
             </div>
             <!-- Card Four -->
@@ -109,7 +109,7 @@
                         <li class="tech"><a href=""> java script </a></li>
                         <li class="tech"><a href=""> html </a></li>
                     </ul>
-                    <button class="btn">See Projects</button>
+                    <button type="button btn" data-modal-target="#project4" class="btn">See Project</button>
                 </div>
                 <!-- Card Five -->
             </div>
@@ -124,7 +124,7 @@
                         <li class="tech"><a href=""> java script </a></li>
                         <li class="tech"><a href=""> html </a></li>
                     </ul>
-                    <button class="btn">See Projects</button>
+                    <button type="button" data-modal-target="#project5" class="btn">See Project</button>
 
                 </div>
             </div>
@@ -140,7 +140,7 @@
                         <li class="tech"><a href=""> java script </a></li>
                         <li class="tech"><a href=""> html </a></li>
                     </ul>
-                    <button class="btn">See Projects</button>
+                    <button type="button" data-modal-target="#project6" class="btn">See Project</button>
                 </div>
             </div>
         </section>
@@ -213,7 +213,7 @@
                 <input type="email" name="_replyto" placeholder="Email address" required><br><br>
                 <textarea id="message" name="message" class="message_box" placeholder="Enter text here here" required
                     maxlength="500"></textarea>
-                <input type="submit" class="btn small-button" value="Get in touch">
+                <input type="submit" class="btn small-button btn" value="Get in touch">
             </form>
 
             <img src="images/desktop-bottom-left.svg" alt="" class="desktop">
@@ -236,8 +236,52 @@
             <p class="mobile second-paragraph email-address">alfkinyua@gmail.com</p>
         </footer>
 
+        <!-- container modal section -->
+        <div class="modal" id="project1">
+            <div class="modal-header">
+                <div class="modal-title"></div>
+                <button type="button" data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+        <div class="modal" id="project2">
+            <div class="modal-header">
+                <div class="modal-title"></div>
+                <button type="button" data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+        <div class="modal" id="project3">
+            <div class="modal-header">
+                <div class="modal-title"></div>
+                <button type="button" data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+        <div class="modal" id="project4">
+            <div class="modal-header">
+                <div class="modal-title"></div>
+                <button type="button" data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+        <div class="modal" id="project5">
+            <div class="modal-header">
+                <div class="modal-title"></div>
+                <button type="button" data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+        <div class="modal" id="project6">
+            <div class="modal-header">
+                <div class="modal-title"></div>
+                <button type="button" data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+        <script src="style.js"></script>
+
     </main>
-    <script src="style.js"></script>
 </body>
 
 </html>
