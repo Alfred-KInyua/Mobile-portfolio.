@@ -19,8 +19,8 @@ img {
   max-width: 100%;
   transform: scale();
   transition-property: all;
-  transition-delay: 0.5s;
-  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
 }
 
 img:hover {
@@ -130,8 +130,8 @@ h4 {
 .social {
   margin-right: 2rem;
   transition-property: all;
-  transition-delay: 0.5s;
-  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
 }
 
 .social:hover {
@@ -229,8 +229,8 @@ h4 {
   margin-bottom: 0.5em;
   border-radius: 4px;
   transition-property: font-size;
-  transition-delay: 0.5s;
-  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
 }
 
 // Mobile menu display
@@ -283,7 +283,7 @@ h4 {
 }
 
 .active {
-  transition: 0.3s ease-out border;
+  transition: 0.1s ease-out border;
 }
 
 .modal {
@@ -292,7 +292,7 @@ h4 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  transition: 200ms ease-in-out;
+  transition: 100ms ease-in-out;
   background-color: white;
   padding: 0 15px 15px 15px;
   max-width: 100%;
@@ -437,7 +437,7 @@ input[type=email] {
 
 .nav-items a {
   text-decoration: none;
-  transition: all 0.5s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .nav-items a:hover,

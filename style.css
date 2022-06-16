@@ -17,10 +17,10 @@ img {
   transform: scale();
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 img:hover {
@@ -156,10 +156,10 @@ h4 {
   margin-right: 2rem;
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 .social:hover {
@@ -281,10 +281,10 @@ h4 {
   border-radius: 4px;
   -webkit-transition-property: font-size;
   transition-property: font-size;
-  -webkit-transition-delay: 0.5s;
-  transition-delay: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 .mobile-menu-paragraph {
@@ -350,8 +350,8 @@ h4 {
 }
 
 .active {
-  -webkit-transition: 0.3s ease-out border;
-  transition: 0.3s ease-out border;
+  -webkit-transition: 0.1s ease-out border;
+  transition: 0.1s ease-out border;
 }
 
 .modal {
@@ -362,8 +362,8 @@ h4 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(0);
   transform: translate(-50%, -50%) scale(0);
-  -webkit-transition: 200ms ease-in-out;
-  transition: 200ms ease-in-out;
+  -webkit-transition: 100ms ease-in-out;
+  transition: 100ms ease-in-out;
   background-color: white;
   padding: 0 15px 15px 15px;
   max-width: 100%;
@@ -545,8 +545,8 @@ input[type=email] {
 
 .nav-items a {
   text-decoration: none;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .nav-items a:hover,
