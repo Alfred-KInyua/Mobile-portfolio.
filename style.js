@@ -136,3 +136,6 @@ closeModalButtons.forEach((button) => {
     closeModal(modal);
   });
 });
+
+
+// wrire dynamic html 
