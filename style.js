@@ -1,6 +1,6 @@
 const ham = document.querySelector('.hamburger');// select the humberger icon
 const closeNow = document.querySelector('.closed'); // select the close image
-const menu_Items = document.querySelectorAll('.mobile-menu'); // select all menu items
+const menuItems = document.querySelectorAll('.mobile-menu'); // select all menu items
 
 function displayMenuNav() {
   document.querySelector('.mobile-container').classList.add('active');
@@ -14,7 +14,7 @@ function closedButton() {
 }
 closeNow.addEventListener('click', closedButton); // closes the menu nav section
 
-menu_Items.forEach((item) => {
+menuItems.forEach((item) => {
   item.addEventListener('click', closedButton); // closes the menu nav section whenever any menu item is clicked
 });
 
@@ -83,7 +83,6 @@ function openModal(modal) {
     if (projects[i].project_id === modal.id) {
       modals.forEach((modal) => {
         const htmlBody = document.querySelector('body');
-        const title = modal.firstElementChild.firstElementChild;
         const body = modal.lastElementChild;
         htmlBody.style.overflow = 'scroll';
         body.innerHTML = `<img class = "modal-img" src="${projects[i].image}" alt="">
