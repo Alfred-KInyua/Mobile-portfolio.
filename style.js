@@ -1,22 +1,21 @@
-const ham = document.querySelector('.hamburger');// select the humberger icon 
-const closeNow = document.querySelector('.closed'); // select the close image 
-const menu_Items = document.querySelectorAll(".mobile-menu") //select all menu items 
+const ham = document.querySelector('.hamburger');// select the humberger icon
+const closeNow = document.querySelector('.closed'); // select the close image
+const menu_Items = document.querySelectorAll('.mobile-menu'); // select all menu items
 
 function displayMenuNav() {
   document.querySelector('.mobile-container').classList.add('active');
   ham.classList.add('invisible');
-
 }
-ham.addEventListener('click', displayMenuNav) // create an event listener to activate the displayNav function
+ham.addEventListener('click', displayMenuNav); // create an event listener to activate the displayNav function
 
 function closedButton() {
   document.querySelector('.mobile-container').classList.remove('active');
   ham.classList.remove('invisible');
 }
-closeNow.addEventListener('click', closedButton) //closes the menu nav section
+closeNow.addEventListener('click', closedButton); // closes the menu nav section
 
 menu_Items.forEach((item) => {
-  item.addEventListener('click', closedButton) //closes the menu nav section whenever any menu item is clicked 
+  item.addEventListener('click', closedButton); // closes the menu nav section whenever any menu item is clicked
 });
 
 // popup window for works section
@@ -25,7 +24,7 @@ const projects = [
     project_id: 'project1',
     name: 'Keeping track of hundreds of components',
     description: 'Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the      industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and      scrambled it 1960s with the releaLorem Ipsum is simply      dummy text of the printing and typesetting industry.      Lorem Ipsum has been the industrys standard dummy text   ever since the 1500s, when an unknown      printer took a galley of type and scrambled it 1960s with the relea',
-    technologies: ['codekit','GitHub', 'Javascript','Bootstrap', 'terminal', 'Codepen'],
+    technologies: ['codekit', 'GitHub', 'Javascript', 'Bootstrap', 'terminal', 'Codepen'],
     image: 'images/modal.png',
     link: ['https://alfred-kinyua.github.io/Mobile-portfolio./', 'https://alfred-kinyua.github.io/Mobile-portfolio./'],
   },
@@ -33,7 +32,7 @@ const projects = [
     project_id: 'project2',
     name: 'Keeping track of hundreds of components',
     description: ' Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the      industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and      scrambled it 1960s with the releaLorem Ipsum is simply      dummy text of the printing and typesetting industry.      Lorem Ipsum has been the industrys standard dummy text   ever since the 1500s, when an unknown      printer took a galley of type and scrambled it 1960s with the relea',
-    technologies: ['codekit','GitHub', 'Javascript','Bootstrap', 'terminal', 'Codepen'],
+    technologies: ['codekit', 'GitHub', 'Javascript', 'Bootstrap', 'terminal', 'Codepen'],
     image: 'images/modal.png',
     link: ['https://alfred-kinyua.github.io/Mobile-portfolio./', 'https://alfred-kinyua.github.io/Mobile-portfolio./'],
   },
@@ -41,7 +40,7 @@ const projects = [
     project_id: 'project3',
     name: 'Keeping track of hundreds of components',
     description: ' Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the      industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and      scrambled it 1960s with the releaLorem Ipsum is simply      dummy text of the printing and typesetting industry.      Lorem Ipsum has been the industrys standard dummy text   ever since the 1500s, when an unknown      printer took a galley of type and scrambled it 1960s with the relea',
-    technologies: ['codekit','GitHub', 'Javascript','Bootstrap', 'terminal', 'Codepen'],
+    technologies: ['codekit', 'GitHub', 'Javascript', 'Bootstrap', 'terminal', 'Codepen'],
     image: 'images/modal.png',
     link: ['https://alfred-kinyua.github.io/Mobile-portfolio./', 'https://alfred-kinyua.github.io/Mobile-portfolio./'],
   },
@@ -49,7 +48,7 @@ const projects = [
     project_id: 'project4',
     name: 'Keeping track of hundreds of components',
     description: ' Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the      industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and      scrambled it 1960s with the releaLorem Ipsum is simply      dummy text of the printing and typesetting industry.      Lorem Ipsum has been the industrys standard dummy text   ever since the 1500s, when an unknown      printer took a galley of type and scrambled it 1960s with the relea',
-    technologies: ['codekit','GitHub', 'Javascript','Bootstrap', 'terminal', 'Codepen'],
+    technologies: ['codekit', 'GitHub', 'Javascript', 'Bootstrap', 'terminal', 'Codepen'],
     image: 'images/modal.png',
     link: ['https://alfred-kinyua.github.io/Mobile-portfolio./', 'https://alfred-kinyua.github.io/Mobile-portfolio./'],
   },
@@ -57,7 +56,7 @@ const projects = [
     project_id: 'project5',
     name: 'Keeping track of hundreds of components',
     description: ' Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the      industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and      scrambled it 1960s with the releaLorem Ipsum is simply      dummy text of the printing and typesetting industry.      Lorem Ipsum has been the industrys standard dummy text   ever since the 1500s, when an unknown      printer took a galley of type and scrambled it 1960s with the relea',
-    technologies: ['codekit','GitHub', 'Javascript','Bootstrap', 'terminal', 'Codepen'],
+    technologies: ['codekit', 'GitHub', 'Javascript', 'Bootstrap', 'terminal', 'Codepen'],
     image: 'images/modal.png',
     link: ['https://alfred-kinyua.github.io/Mobile-portfolio./', 'https://alfred-kinyua.github.io/Mobile-portfolio./'],
   },
@@ -65,10 +64,10 @@ const projects = [
     project_id: 'project6',
     name: 'Keeping track of hundreds of components',
     description: ' Lorem Ipsum is simply dummy text of the printing  and typesetting industry. Lorem Ipsum has been the      industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and      scrambled it 1960s with the releaLorem Ipsum is simply      dummy text of the printing and typesetting industry.      Lorem Ipsum has been the industrys standard dummy text   ever since the 1500s, when an unknown      printer took a galley of type and scrambled it 1960s with the relea',
-    technologies: ['codekit','GitHub', 'Javascript','Bootstrap', 'terminal', 'Codepen'],
+    technologies: ['codekit', 'GitHub', 'Javascript', 'Bootstrap', 'terminal', 'Codepen'],
     image: 'images/modal.png',
     link: ['https://alfred-kinyua.github.io/Mobile-portfolio./', 'https://alfred-kinyua.github.io/Mobile-portfolio./'],
-  }
+  },
 ];
 
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
@@ -80,9 +79,9 @@ function openModal(modal) {
 
   const modals = document.querySelectorAll('.modal');
 
-  for (let i = 0; i < projects.length; i+=1) {
+  for (let i = 0; i < projects.length; i += 1) {
     if (projects[i].project_id === modal.id) {
-        modals.forEach((modal) => {
+      modals.forEach((modal) => {
         const htmlBody = document.querySelector('body');
         const title = modal.firstElementChild.firstElementChild;
         const body = modal.lastElementChild;
@@ -97,7 +96,7 @@ function openModal(modal) {
                           </div>
                           <div id = "project-desc">                              
                                   <ul id="technologies">
-                                  ${projects[i].technologies.map((technology) =>  `                                  
+                                  ${projects[i].technologies.map((technology) => `                                  
                                   <li class = "tech-type">${technology}</li>`).join(' ')}
                                   </ul > 
                                   <div id = "description-subsection">                              
@@ -138,8 +137,3 @@ closeModalButtons.forEach((button) => {
     closeModal(modal);
   });
 });
-
-
-
-
-
