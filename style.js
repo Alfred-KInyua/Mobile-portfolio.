@@ -80,7 +80,7 @@ function openModal(modal) {
 
   const modals = document.querySelectorAll('.modal');
 
-  for (let i = 0; i < projects.length; i++) {
+  for (let i = 0; i < projects.length; i+=1) {
     if (projects[i].project_id === modal.id) {
         modals.forEach((modal) => {
         const htmlBody = document.querySelector('body');
