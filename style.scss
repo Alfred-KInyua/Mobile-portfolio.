@@ -78,6 +78,7 @@ body {
 .menu {
   list-style-type: none;
   display: flex;
+  justify-content: center;
 }
 
 .menu li {
@@ -362,7 +363,7 @@ body {
 }
 
 .skill-item {
-  background-image: url(../assets/images/Img-Plaholder.svg);
+  background-image: url(images/ImgPlaholder.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
