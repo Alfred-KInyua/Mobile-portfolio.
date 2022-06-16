@@ -93,7 +93,6 @@ function openModal(modal) {
                              <div id='project-buttons'>
                                <a class = "link" href="${projects[i].link[0]}" target="_blank">See Live <img src='images/liveicon.svg'></a>
                                <a class = "link" href="${projects[i].link[1]}" target="_blank">See Source <img src='images/liveicon2.png'></a>
-                               <a class = "link" href="${projects[i].link[2]}" target="_blank">See Source <img src='images/liveicon3.png'></a>
                              </div>
                           </div>
                           <div id = "project-desc">                              
