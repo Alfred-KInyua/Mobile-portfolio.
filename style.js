@@ -67,7 +67,7 @@ window.onload = () => {
   fetchData();
 };
 
-// popup window
+// popup up window
 
 const projects = [
   {
