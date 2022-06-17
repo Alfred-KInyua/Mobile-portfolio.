@@ -21,17 +21,17 @@ document.querySelectorAll('.menu').forEach((link) => {
 
 //create form validation section 
 const targetEmailInput = document.getElementById('email');
-const displayError = document.querySelector('.display-error p');
+const displayError = document.querySelector('#feedback');
 const form = document.querySelector('form');
 
 
 function showError() {
-  displayError.textContent = 'The email must be lowercase!';
+  displayError.innerHTML = '<strong>The email must be lowercase!</strong>';
   displayError.style.color = "#ff0000";
 }
 
 function showPassed () {
-  displayError.textContent = 'Email is valid. Form submitted';
+  displayError.textContent = '<strong>Email is valid. Form submitted</strong>';
   displayError.style.color = "#00ff00";
 }
 
