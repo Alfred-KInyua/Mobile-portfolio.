@@ -20,7 +20,31 @@ document.querySelectorAll('.menu').forEach((link) => {
 });
 
 //create form validation section 
+const targetEmailInput = document.getElementById('email');
+const displayError = document.querySelector('.display-error p');
+const form = document.querySelector('form');
 
+
+function showError() {
+  displayError.textContent = 'The email must be lowercase!';
+  displayError.style.color = "#ff0000";
+}
+
+function showPassed () {
+  displayError.textContent = 'Email is valid. Form submitted';
+  displayError.style.color = "#00ff00";
+}
+
+form.addEventListener('submit', function (event) {
+  const pattern = /^[a-z0-9@.]+$/;
+  if(!pattern.test(targetEmailInput.value)) {
+    showError();
+    event.preventDefault();
+  }
+  else{
+    showPassed();
+  }
+});
 
 
 
