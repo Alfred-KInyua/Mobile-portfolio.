@@ -19,53 +19,37 @@ document.querySelectorAll('.menu').forEach((link) => {
   });
 });
 
-// input form validation
-const form = document.querySelector('#form');
+//create form validation section 
+const targetEmailInput = document.getElementById('email');
+const displayError = document.querySelector('#feedback');
+const form = document.querySelector('form');
 
-form.addEventListener('submit', (e) => {
-  const email = document.querySelector('#email').value;
-  const errorMsg = document.querySelector('.error-message');
-  if (email !== email.toLowerCase()) {
-    e.preventDefault();
-    errorMsg.style.display = 'flex';
+
+function showError() {
+  displayError.innerHTML = '<strong>The email must be lowercase!</strong>';
+  displayError.style.color = "#ff0000";
+}
+
+function showPassed () {
+  displayError.textContent = '<strong>Email is valid. Form submitted</strong>';
+  displayError.style.color = "#00ff00";
+}
+
+form.addEventListener('submit', function (event) {
+  const pattern = /^[a-z0-9@.]+$/;
+  if(!pattern.test(targetEmailInput.value)) {
+    showError();
+    event.preventDefault();
+  }
+  else{
+    showPassed();
   }
 });
 
-// localstorage
-const firstName = document.querySelector('#firstname');
-const lastName = document.querySelector('#lastname');
-const emailAddress = document.querySelector('#email');
-const message = document.querySelector('#message');
 
-function storeData() {
-  const formData = {
-    firstname: firstName.value,
-    lastname: lastName.value,
-    email: emailAddress.value,
-    message: message.value,
-  };
-  localStorage.setItem('form-data', JSON.stringify(formData));
-}
 
-function fetchData() {
-  const data = localStorage.getItem('form-data');
-  if (data) {
-    fetch = JSON.parse(data);
-    firstName.value = fetch.firstname;
-    lastName.value = fetch.lastname;
-    emailAddress.value = fetch.email;
-    message.text = fetch.messsage;
-  }
-}
 
-window.onload = () => {
-  firstName.addEventListener('input', storeData());
-  lastName.addEventListener('input', storeData());
-  emailAddress.addEventListener('input', storeData());
-  message.addEventListener('input', storeData());
 
-  fetchData();
-};
 
 // popup up window
 

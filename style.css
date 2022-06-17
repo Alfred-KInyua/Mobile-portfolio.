@@ -629,10 +629,7 @@ body {
   background-color: #008552;
 }
 
-.error-message {
-  display: none;
-  color: #e21e04;
-  background: #e6ebed;
+.display-error {
   border-radius: 15px;
   padding: 5px;
   -webkit-box-pack: center;
