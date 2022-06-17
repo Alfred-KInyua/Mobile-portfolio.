@@ -12,18 +12,18 @@ body {
   font-family: Inter, sans-serif;
 }
 
-.main {
+.primary {
   color: #172b4d;
 }
 
-.main-text {
-  font-size: 38px;
-  font-weight: 650;
+.primary-text {
+  font-size: 40px;
+  font-weight: 700;
   text-align: center;
   color: #172b4d;
 }
 
-.heading_three {
+.secondary {
   color: #36b37e;
 }
 
@@ -40,14 +40,14 @@ body {
   align-items: center;
 }
 
-.toolbar-style {
+.toolbar {
   padding: 26px 24px;
   background: transparent;
   height: 72px;
   top: 0;
 }
 
-.green-color-btn a {
+.green-btn a {
   background-color: #36b37e;
   color: #fff;
   padding: 12px 12px;
@@ -92,9 +92,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .menu li {
@@ -186,7 +183,7 @@ body {
 }
 
 .section-bg-image {
-  background-image: url(images/background.svg);
+  background-image: url(images/header-bg.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -384,11 +381,11 @@ body {
   color: #7f8cff;
 }
 
-.green-color-btn a:hover {
+.green-btn a:hover {
   background-color: #1d8c6a;
 }
 
-.green-color-btn a:active {
+.green-btn a:active {
   background-color: #008552;
 }
 
@@ -419,7 +416,7 @@ body {
   color: #7f8cff;
 }
 
-.green-color-btn {
+.green-btn {
   margin: 16px auto;
 }
 
@@ -881,7 +878,7 @@ body {
   }
 
   .section-bg-image {
-    background-image: url(images/desktopbg.svg);
+    background-image: url(images/header-bg.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1331,15 +1328,15 @@ body {
     line-height: 1.5;
   }
 
-  .green-color-btn a:hover {
+  .green-btn a:hover {
     background-color: #36b37f;
   }
 
-  .green-color-btn a:active {
+  .green-btn a:active {
     background-color: #043120;
   }
 
-  div > .green-color-btn a:hover {
+  div > .green-btn a:hover {
     background-color: green;
   }
 
@@ -1362,12 +1359,12 @@ body {
   }
 
   .about-bg-img {
-    background: url(images/desktop-bottom-left.svg) left no-repeat, url(images/desktop-bottom-right.svg) right no-repeat;
+    background: url(images/about-me-left.svg) left no-repeat, url(images/aboutmedesktop-right.svg) right no-repeat;
   }
 
   .contact-bg-img {
     float: right;
-    background: url(../assets/images/bottom-bg/left-img.svg) left bottom no-repeat, url(../assets/images/bottom-bg/right-img.svg) right bottom no-repeat;
+    background: url(images/left-img.svg) left bottom no-repeat, url(images/right-img.svg) right bottom no-repeat;
   }
 }
 
@@ -1613,12 +1610,12 @@ body {
   }
 
   .about-bg-img {
-    background: url(../assets/images/about-me/about-me-left.svg) left bottom no-repeat, url(../assets/images/about-me/aboutmedesktop-right.svg) right top no-repeat;
+    background: url(images/about-me-left.svg) left bottom no-repeat, url(images/aboutmedesktop-right.svg) right top no-repeat;
     background-size: 100px, 500px, auto;
   }
 
   .contact-bg-img {
-    background: url(../assets/images/bottom-bg/left-img.svg) left bottom no-repeat, url(../assets/images/bottom-bg/right-img.svg) right bottom no-repeat;
+    background: url(images/left-img.svg) left bottom no-repeat, url(images/right-img.svg) right bottom no-repeat;
     background-size: 0, 80px, auto;
   }
 }

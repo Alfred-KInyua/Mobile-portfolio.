@@ -1,230 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alfred Kinyua Portifolio</title>
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="section-bg-image">
-            <header class="toolbar-style">
-                <div class="overlay">
-                    <nav class="nav-menu">
-                        <a href="index.html" class="logo main">Alfred</a>
-                        <ul class="menu">
-                            <li>
-                                <a class="menu-link" href="#portfolio">Portifolio</a>
-                            </li>
-                            <li>
-                                <a class="menu-link" href="#about">About</a>
-                            </li>
-                            <li>
-                                <a class="menu-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                        <div class="hamburger">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-
-            <section class="section">
-                <div class="wrapper">
-                    <div class="title">
-                        <h1 class="main-text">Hey there!, I'm Alfred kinyua</h1>
-                        <h3 class="heading_three">I'm a software developer</h3>
-                    </div>
-                    <div class="description">
-                        <p>
-                            I can help you build a product , feature or website Look through
-                            some of my work and experience! If you like what you see and
-                            have a project you need coded,don’t hestiate to contact me.
-                        </p>
-                    </div>
-                    <div class="social-icons">
-                        <ul>
-                            <li>
-                                <a href="https://github.com/Alfred-KInyua">
-                                    <img src="images/github.svg" class="icon" alt="github" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/Linkedin.svg" class="icon" alt="linkedin" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/angellist.svg" class="icon" alt="angellist" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/alfkinyua">
-                                    <img src="images/twitter.svg" class="icon" alt="twitter" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="images/medium.svg" class="icon" alt="medium" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="down-arrow">
-                        <a href="">
-                            <img src="images/dropdown.png" class="icon" alt="drop-down icon" />
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <section id="portfolio" class="section">
+      <div class="section-bg-image">
+        <header class="toolbar">
+          <div class="overlay">
+            <nav class="nav-menu">
+              <a href="index.html" class="logo primary">ALfred </a>
+              <ul class="menu">
+                <li>
+                  <a class="menu-link" href="#portfolio">Portifolio</a>
+                </li>
+                <li>
+                  <a class="menu-link" href="#about">About</a>
+                </li>
+                <li>
+                  <a class="menu-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <section class="section">
+          <div class="wrapper">
             <div class="title">
-                <h2 class="main-text">My Recent Works</h2>
-                <hr class="line" />
+              <h1 class="primary-text">Hey there!, I'm Alfred kinyua</h1>
+              <h3 class="secondary">I'm a software developer</h3>
             </div>
-            <div class="grid-container projects-set projects"></div>
-
-            <!-- modal section for dynamic content-->
-            <div class="modal-overlay">
-                <div class="modal" id="project-modal"></div>
+            <div class="description">
+              <p>
+                I can help you build a product , feature or website Look through
+                some of my work and experience! If you like what you see and
+                have a project you need coded,don’t hestiate to contact me.
+              </p>
             </div>
-        </section>
-
-        <section id="about" class="section">
-            <div class="about-bg-img">
-                <div class="about-header">
-                    <div class="title">
-                        <h2 class="main-text">About Me</h2>
-                        <hr class="line" />
-                    </div>
-                    <p class="about-text">
-                        I can help you build a product , feature or website Look through
-                        some of my work and experience! If you like what you see and have
-                        a project you need coded, don’t hestiate to contact me.
-                    </p>
-                    <div class="green-color-btn">
-                        <a href="">Get My Resume</a>
-                    </div>
-                </div>
-            </div>
-            <ul class="grid-container skills-set">
-                <li class="grid-item skill-item">
-                    <div class="item-icon">
-                        <img src="images/icon-languages.svg" alt=" language-icon " />
-                    </div>
-                    <h3 class="item-title">Languages</h3>
-                    <ul class="item-langs">
-                        <li>Javascript</li>
-                        <li>Ruby</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </li>
-
-                <li class="grid-item skill-item">
-                    <div class="item-icon">
-                        <img src="images/icon-frameworks2.svg" alt="framework" />
-                    </div>
-                    <h3 class="item-title">Frameworks</h3>
-                    <ul class="item-langs">
-                        <li>Bootstrap</li>
-                        <li>Ruby on Rails</li>
-                        <li>RSpec</li>
-                        <li>Capybara</li>
-                        <li>Selenium</li>
-                    </ul>
-                </li>
-
-                <li class="grid-item skill-item">
-                    <div class="item-icon">
-                        <img src="images/icon-skills3.svg" alt=" skills" />
-                    </div>
-                    <h3 class="item-title">Skills</h3>
-                    <ul class="item-langs">
-                        <li>Codekit</li>
-                        <li>Github</li>
-                        <li>Codepen</li>
-                        <li>Gitlab</li>
-                        <li>Terminal</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section id="contact" class="section contact-bg-img">
-            <div class="contacts-row">
-                <div class="contact-column">
-                    <p class="contact-notice">
-                        I'm always interested in hearing about new projects, so if you'd
-                        like to chat please get in touch.
-                    </p>
-                    <img class="bottom-bg-image" src="" alt="middle" />
-                </div>
-                <div class="contact-column">
-                    <form action="https://formspree.io/f/mknypyqz" method="post" id="form">
-                        <div class="form-group">
-                            <input type="text" maxlength="30" name="firstname" id="firstname" placeholder="First Name"
-                                required />
-                            <input type="text" maxlength="30" name="lastname" id="lastname" placeholder="Last Name"
-                                required />
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" id="email" required placeholder=" Email Address " />
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="5" maxlength="500" name="message" id="message"
-                                placeholder="Type something here" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" name="submit">Get in touch</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
             <div class="social-icons">
-                <ul>
-                    <li>
-                        <a href="https://github.com/Alfred-KInyua">
-                            <img src="images/github.svg" class="icon" alt="github" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/Linkedin.svg" class="icon" alt="linkedin" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="# ">
-                            <img src="images/angellist.svg" class="icon" alt="angellist" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/alfkinyua ">
-                            <img src="images/twitter.svg" class="icon" alt="twitter" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/medium.svg" class="icon" alt="medium" />
-                        </a>
-                    </li>
-                </ul>
-                <p class="footer-email">alfkinyua.com</p>
-                <hr class="bottom-line" />
+              <ul>
+                <li>
+                  <a href="https://github.com/Alfred-KInyua">
+                    <img
+                      src="images/github.svg"
+                      class="icon"
+                      alt="github-icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                  >
+                    <img
+                      src="images/Linkedin.svg"
+                      class="icon"
+                      alt="linkedin-icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/angellist.svg"
+                      class="icon"
+                      alt="angellist-icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/@alfkinyua@gmail.com">
+                    <img
+                      src="images/twitter.svg"
+                      class="icon"
+                      alt="twitter-icon"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://medium.com/@alfkinyua">
+                    <img
+                      src="images/medium.svg"
+                      class="icon"
+                      alt="medium-icon"
+                    />
+                  </a>
+                </li>
+              </ul>
             </div>
-        </footer>
+            <div class="down-arrow">
+              <a href="">
+                <img
+                  src="images/dropdown.png"
+                  class="icon"
+                  alt="arrow-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="portfolio" class="section">
+        <div class="title">
+          <h2 class="primary-text">My Recent Works</h2>
+          <hr class="line" />
+        </div>
+        <div class="grid-container projects-set projects"></div>
+        <!-- modal -->
+        <div class="modal-overlay">
+          <div class="modal" id="project-modal"></div>
+        </div>
+     </section>
+      
+      <section id="about" class="section">
+        <div class="about-bg-img">
+          <div class="about-header">
+            <div class="title">
+              <h2 class="primary-text">About Me</h2>
+              <hr class="line" />
+            </div>
+            <p class="about-text">
+              I can help you build a product , feature or website Look through
+              some of my work and experience! If you like what you see and have
+              a project you need coded, don’t hestiate to contact me.
+            </p>
+            <div class="green-btn">
+              <a href="">Get My Resume</a>
+            </div>
+          </div>
+        </div>
+        <ul class="grid-container skills-set">
+          <li class="grid-item skill-item">
+            <div class="item-icon">
+              <img src="images/lang-icon.svg" alt=" language-icon " />
+            </div>
+            <h3 class="item-title">Languages</h3>
+            <ul class="item-langs">
+              <li>Javascript</li>
+              <li>Ruby</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </li>
+
+          <li class="grid-item skill-item">
+            <div class="item-icon">
+              <img
+                src="images/framework-icon.svg"
+                alt="framework-icon "
+              />
+            </div>
+            <h3 class="item-title">Frameworks</h3>
+            <ul class="item-langs">
+              <li>Bootstrap</li>
+              <li>Ruby on Rails</li>
+              <li>RSpec</li>
+              <li>Capybara</li>
+              <li>Selenium</li>
+            </ul>
+          </li>
+
+          <li class="grid-item skill-item">
+            <div class="item-icon">
+              <img src="images/skills-icon.svg" alt=" skills-icon" />
+            </div>
+            <h3 class="item-title">Skills</h3>
+            <ul class="item-langs">
+              <li>Codekit</li>
+              <li>Github</li>
+              <li>Codepen</li>
+              <li>Gitlab</li>
+              <li>Terminal</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section id="contact" class="section contact-bg-img">
+        <div class="contacts-row">
+          <div class="contact-column">
+            <p class="contact-notice">
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </p>
+            <img
+              class="bottom-bg-image"
+              src="images/middle-img.svg"
+              alt="middle-img "
+            />
+          </div>
+          <div class="contact-column">
+            <form
+              action="https://formspree.io/f/mknypyqz"
+              method="post"
+              id="form"
+            >
+              <div class="form-group">
+                <input
+                  type="text"
+                  maxlength="30"
+                  name="firstname"
+                  id="firstname"
+                  placeholder="First Name"
+                  required
+                />
+                <input
+                  type="text"
+                  maxlength="30"
+                  name="lastname"
+                  id="lastname"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder=" Email Address "
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  rows="5"
+                  maxlength="500"
+                  name="message"
+                  id="message"
+                  placeholder="Type something here"
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" name="submit">Get in touch</button>
+              </div>
+              <div class="error-message">
+                <img src="images/error.png" alt="error" />
+                <p>
+                  Error "Form not sent"<br /><b>Reason: </b>The content of the
+                  email field has to be in lower case
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="social-icons">
+          <ul>
+            <li>
+              <a href="">
+                <img
+                  src="images/github.svg"
+                  class="icon"
+                  alt="github-icon "
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+              >
+                <img
+                  src="images/Linkedin.svg"
+                  class="icon"
+                  alt="linkedin-icon "
+                />
+              </a>
+            </li>
+            <li>
+              <a href="# ">
+                <img
+                  src="images/angellist.svg "
+                  class="icon"
+                  alt="angellist-icon "
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/@alfkinyua">
+                <img
+                  src="images/twitter.svg"
+                  class="icon"
+                  alt="twitter-icon "
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="images/medium.svg"
+                  class="icon"
+                  alt="medium-icon "
+                />
+              </a> <img src="images/" alt="">
+            </li>
+          </ul>
+          <p class="footer-email">alfredkinyua@gmail.com</p>
+          <hr class="bottom-line" />
+        </div>
+      </footer>
     </div>
     <script src="style.js"></script>
-</body>
-
+  </body>
 </html>
