@@ -19,53 +19,12 @@ document.querySelectorAll('.menu').forEach((link) => {
   });
 });
 
-// input form validation
-const form = document.querySelector('#form');
+//create form validation section 
 
-form.addEventListener('submit', (e) => {
-  const email = document.querySelector('#email').value;
-  const errorMsg = document.querySelector('.error-message');
-  if (email !== email.toLowerCase()) {
-    e.preventDefault();
-    errorMsg.style.display = 'flex';
-  }
-});
 
-// Lets set up local storage localstorage
-const myFirstName = document.querySelector('#firstname');
-const myLastName = document.querySelector('#lastname');
-const myEmailAddress = document.querySelector('#email');
-const Mymessage = document.querySelector('#message');
 
-function storeData() {
-  const formData = {
-    firstname: firstName.value,
-    lastname: lastName.value,
-    email: emailAddress.value,
-    message: message.value,
-  };
-  localStorage.setItem('form-data', JSON.stringify(formData));
-}
 
-function fetchData() {
-  const data = localStorage.getItem('form-data');
-  if (data) {
-    fetch = JSON.parse(data);
-    firstName.value = fetch.firstname;
-    lastName.value = fetch.lastname;
-    emailAddress.value = fetch.email;
-    message.text = fetch.messsage;
-  }
-}
 
-window.onload = () => {
-  firstName.addEventListener('input', storeData());
-  lastName.addEventListener('input', storeData());
-  emailAddress.addEventListener('input', storeData());
-  message.addEventListener('input', storeData());
-
-  fetchData();
-};
 
 // popup up window
 
