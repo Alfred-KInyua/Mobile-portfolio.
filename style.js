@@ -31,11 +31,11 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-// localstorage
-const firstName = document.querySelector('#firstname');
-const lastName = document.querySelector('#lastname');
-const emailAddress = document.querySelector('#email');
-const message = document.querySelector('#message');
+// Lets set up local storage localstorage
+const myFirstName = document.querySelector('#firstname');
+const myLastName = document.querySelector('#lastname');
+const myEmailAddress = document.querySelector('#email');
+const Mymessage = document.querySelector('#message');
 
 function storeData() {
   const formData = {
