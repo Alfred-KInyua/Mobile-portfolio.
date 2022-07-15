@@ -55,12 +55,12 @@ form.addEventListener('submit', function (event) {
 
 const projects = [
   {
-    title: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    featuredImage: 'images/modal.png',
+    title: 'To do list Application Program',
+    description: " My todo-ist app has a simplified, user-friendly GUI letting you navigate a powerful set of features, myToDo stands out of the crowd when it comes to helping with task completion.",
+    featuredImage: 'images/profile_test_code.png',
     image: 'images/Img-Plaholder.svg',
     teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
-    versionURL: 'https://alfred-kinyua.github.io/Mobile-portfolio./',
+    versionURL: 'https://alfred-kinyua.github.io/to-do-list-project-/',
     sourceURL: 'https://github.com/Alfred-KInyua',
 
   },
