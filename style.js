@@ -58,10 +58,10 @@ const projects = [
     title: 'To do list Application Program',
     description: " My todo-ist app has a simplified, user-friendly GUI letting you navigate a powerful set of features, myToDo stands out of the crowd when it comes to helping with task completion.",
     featuredImage: 'images/profile_test_code.png',
-    image: 'images/Img-Plaholder.svg',
+    image: 'images/profile_test_code.png',
     teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
-    versionURL: 'https://alfred-kinyua.github.io/to-do-list-project-/',
-    sourceURL: 'https://github.com/Alfred-KInyua',
+    versionURL: 'https://github.com/Alfred-KInyua',
+    sourceURL: 'https://alfred-kinyua.github.io/to-do-list-project-/',
 
   },
   {
