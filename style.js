@@ -19,99 +19,95 @@ document.querySelectorAll('.menu').forEach((link) => {
   });
 });
 
-//create form validation section 
+//create form validation section
 const targetEmailInput = document.getElementById('email');
 const displayError = document.querySelector('#feedback');
 const form = document.querySelector('form');
 
-
 function showError() {
   displayError.innerHTML = '<strong>The email must be lowercase!</strong>';
-  displayError.style.color = "#ff0000";
+  displayError.style.color = '#ff0000';
 }
 
-function showPassed () {
+function showPassed() {
   displayError.textContent = '<strong>Email is valid. Form submitted</strong>';
-  displayError.style.color = "#00ff00";
+  displayError.style.color = '#00ff00';
 }
 
 form.addEventListener('submit', function (event) {
   const pattern = /^[a-z0-9@.]+$/;
-  if(!pattern.test(targetEmailInput.value)) {
+  if (!pattern.test(targetEmailInput.value)) {
     showError();
     event.preventDefault();
-  }
-  else{
+  } else {
     showPassed();
   }
 });
-
-
-
-
-
 
 // popup up window
 
 const projects = [
   {
     title: 'To do list Application Program',
-    description: " My todo-ist app has a simplified, user-friendly GUI letting you navigate a powerful set of features, myToDo stands out of the crowd when it comes to helping with task completion.",
+    description:
+      ' My todo-ist app has a simplified, user-friendly GUI letting you navigate a powerful set of features, myToDo stands out of the crowd when it comes to helping with task completion.',
     featuredImage: 'images/profile_test_code.png',
     image: 'images/profile_test_code.jpg',
     teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
     versionURL: 'https://github.com/Alfred-KInyua',
     sourceURL: 'https://alfred-kinyua.github.io/to-do-list-project-/',
-
   },
   {
-    title: 'List of Countries',
-    description: "A Countries application that fetches data from an API and provides the countries data such as population, capital city and coat of arms",
+    title: 'Fetch list of countries data from API request ',
+    description:
+      'A Countries application that fetches data from an API and provides the countries data such as population, capital city and coat of arms',
     featuredImage: 'images/counts.png',
     image: 'images/counts.jpg',
     teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
-    versionURL: 'https://deploy-preview-1--precious-rabanadas-551da9.netlify.app/',
-    sourceURL: 'https://github.com/Alfred-KInyua',
-
+    versionURL: 'https://github.com/Alfred-KInyua',
+    sourceURL:
+      'https://deploy-preview-1--precious-rabanadas-551da9.netlify.app/',
   },
   {
     title: 'Space Travelers',
-    description: "This project was developed using SPA React-Redux toolkit. and Jest testing. It consumes API rocket and mission data, and allow users to reserve and or cancel their preferred rockets. It also allows user to choose any mission they are interested in. The chosen rockets and missions are then displayed in the profile section of the SPA",
+    description:
+      'This project was developed using SPA React-Redux toolkit. and Jest testing. It consumes API rocket and mission data, and allow users to reserve and or cancel their preferred rockets. It also allows user to choose any mission they are interested in. The chosen rockets and missions are then displayed in the profile section of the SPA',
     featuredImage: 'images/spacetraveler.png',
     image: 'images/spacetravelers.png',
     teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
-    versionURL: 'https://deploy-preview-56--cute-cranachan-7538ff.netlify.app/',
-    sourceURL: 'https://github.com/Alfred-KInyua',
-
+    versionURL: 'https://github.com/Alfred-KInyua',
+    sourceURL: 'https://deploy-preview-56--cute-cranachan-7538ff.netlify.app/',
   },
   {
     title: 'Leaderboard App',
-    description: "A JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. Develop a working version of the app following the provided Wireframe, with styling, focused on functionality.",
-    featuredImage: 'images/leaders.png',
-    image: 'images/leaders.png',
+    description:
+      'A JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. Develop a working version of the app following the provided Wireframe, with styling, focused on functionality.',
+    featuredImage: './images/leaderboard.svg',
+    image: 'images/leaderboards.svg',
     teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
-    versionURL: 'https://630759fc00a34408cef91404--luminous-kitten-cfcb1a.netlify.app/',
-    sourceURL: 'https://github.com/Alfred-KInyua',
-
+    versionURL: 'https://github.com/Alfred-KInyua',
+    sourceURL:
+      'https://630759fc00a34408cef91404--luminous-kitten-cfcb1a.netlify.app/',
+  },
+  {
+    title: 'Reserve a Motorbike',
+    description:
+      'A bike reservation application that allows users to signup, reserve a bike, add bike details and delete bike',
+    featuredImage: 'images/bikes.png',
+    image: 'images/ducati.jpeg',
+    teachnologies: ['Bootstrap', 'RSpec', 'ReactJs', 'Ruby on Rails'],
+    versionURL: 'https://github.com/Alfred-KInyua',
+    sourceURL: 'https://alfred-kinyua.github.io/Mobile-portfolio./',
   },
   {
     title: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     featuredImage: 'images/modal.png',
     image: 'images/Img-Plaholder.svg',
     teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
-    versionURL: 'https://alfred-kinyua.github.io/Mobile-portfolio./',
-    sourceURL: 'https://github.com/Alfred-KInyua',
-
-  },
-  {
-    title: 'Keeping track of hundreds of components',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    featuredImage: 'images/modal.png',
-    image: 'images/Img-Plaholder.svg',
-    teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
-    versionURL: 'https://alfred-kinyua.github.io/Mobile-portfolio./',
-    sourceURL: 'https://github.com/Alfred-KInyua',
+    versionURL: 'https://github.com/Alfred-KInyua',
+    sourceURL: 'https://alfred-kinyua.github.io/Mobile-portfolio./',
   },
 ];
 
