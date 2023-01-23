@@ -88,6 +88,7 @@ body {
   color: #344563;
   text-decoration: none;
 }
+
 .get-in-touch {
   background-color: red;
   padding: 10px;
@@ -757,9 +758,11 @@ body {
   .a5:hover {
     transform: scale(1.3) rotate(5deg);
   }
+
   .project:hover {
     transform: scale(1.01);
   }
+
   .down-arrow {
     text-align: center;
     margin: 70px auto;
@@ -835,6 +838,7 @@ body {
     position: relative;
     z-index: 1;
   }
+
   .about-text {
     text-align: justify;
     line-height: 1.7em;
@@ -1080,13 +1084,15 @@ body {
   }
 
   .about-bg-img {
-    background: url(images/about-me-left.svg) left no-repeat,
+    background:
+      url(images/about-me-left.svg) left no-repeat,
       url(images/aboutmedesktop-right.svg) right no-repeat;
   }
 
   .contact-bg-img {
     float: right;
-    background: url(images/left-img.svg) left bottom no-repeat,
+    background:
+      url(images/left-img.svg) left bottom no-repeat,
       url(images/right-img.svg) right bottom no-repeat;
   }
 }
@@ -1284,13 +1290,15 @@ body {
   }
 
   .about-bg-img {
-    background: url(images/about-me-left.svg) left bottom no-repeat,
+    background:
+      url(images/about-me-left.svg) left bottom no-repeat,
       url(images/aboutmedesktop-right.svg) right top no-repeat;
     background-size: 100px, 500px, auto;
   }
 
   .contact-bg-img {
-    background: url(images/left-img.svg) left bottom no-repeat,
+    background:
+      url(images/left-img.svg) left bottom no-repeat,
       url(images/right-img.svg) right bottom no-repeat;
     background-size: 0, 80px, auto;
   }
