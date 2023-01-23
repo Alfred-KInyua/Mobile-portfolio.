@@ -51,8 +51,8 @@ const projects = [
     title: 'To do list Application Program',
     description:
       ' My todo-ist app has a simplified, user-friendly GUI letting you navigate a powerful set of features, myToDo stands out of the crowd when it comes to helping with task completion.',
-    featuredImage: 'images/profile_test_code.png',
-    image: 'images/profile_test_code.jpg',
+    featuredImage: 'images/todolist.jpg',
+    image: 'images/todolist.jpg',
     teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
     versionURL: 'https://github.com/Alfred-KInyua',
     sourceURL: 'https://alfred-kinyua.github.io/to-do-list-project-/',
@@ -71,9 +71,9 @@ const projects = [
   {
     title: 'Space Travelers',
     description:
-      'This project was developed using SPA React-Redux toolkit. and Jest testing. It consumes API rocket and mission data, and allow users to reserve and or cancel their preferred rockets. It also allows user to choose any mission they are interested in. The chosen rockets and missions are then displayed in the profile section of the SPA',
-    featuredImage: 'images/spacetraveler.png',
-    image: 'images/spacetravelers.png',
+      'This project was developed using SPA (SIngle Page Application) Redux toolkit and Jest testing. It consumes API rocket and mission data and allows users to reserve and or cancel their preferred rockets. It also allows users to choose any mission they are interested in. The chosen rockets and missions are then displayed in the profile section of the SPA',
+    featuredImage: 'images/space.jpg',
+    image: 'images/space.jpg',
     teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
     versionURL: 'https://github.com/Alfred-KInyua',
     sourceURL: 'https://deploy-preview-56--cute-cranachan-7538ff.netlify.app/',
@@ -81,20 +81,20 @@ const projects = [
   {
     title: 'Leaderboard App',
     description:
-      'A JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. Develop a working version of the app following the provided Wireframe, with styling, focused on functionality.',
-    featuredImage: './images/leaderboard.svg',
-    image: 'images/leaderboards.svg',
+      'A JavaScript project for the Leader-board list app, developed using Webpack and ES6 features, notably modules. This app was developed using a working version of the app following the provided Wireframe, with styling data, focused on functionality.',
+    featuredImage: './images/scores.jpg',
+    image: 'images/scores.jpg',
     teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
     versionURL: 'https://github.com/Alfred-KInyua',
     sourceURL:
       'https://630759fc00a34408cef91404--luminous-kitten-cfcb1a.netlify.app/',
   },
   {
-    title: 'Reserve a Motorbike',
+    title: 'Reserve a Motorcycle',
     description:
-      'A bike reservation application that allows users to signup, reserve a bike, add bike details and delete bike',
+      'A motorcycle reservation application that allows users to signup, reserve a bike, add bike details, and delete bikes. This app was developed using ReactJs which was responsible for frontend presentation and Ruby on Rails which was responsible  for generating the backend API based on user input',
     featuredImage: 'images/bikes.png',
-    image: 'images/ducati.jpeg',
+    image: 'images/bike.jpg',
     teachnologies: ['Bootstrap', 'RSpec', 'ReactJs', 'Ruby on Rails'],
     versionURL: 'https://github.com/Alfred-KInyua',
     sourceURL: 'https://alfred-kinyua.github.io/Mobile-portfolio./',

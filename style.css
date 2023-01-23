@@ -1027,6 +1027,10 @@ body {
     position: relative;
     z-index: 1;
   }
+  .about-text {
+    text-align: justify;
+    line-height: 1.7em;
+  }
   .about-bg-imgs {
     position: absolute;
     z-index: -1;
