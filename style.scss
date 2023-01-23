@@ -88,6 +88,13 @@ body {
   color: #344563;
   text-decoration: none;
 }
+.get-in-touch {
+  background-color: red;
+  padding: 10px;
+  border-radius: 15px;
+  color: white !important;
+  font-weight: bolder;
+}
 
 .logo {
   text-decoration: none;
@@ -1066,10 +1073,6 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-  }
-
-  .footer-email {
-    display: none;
   }
 
   .about-bg-img {

@@ -102,6 +102,14 @@ body {
   text-decoration: none;
 }
 
+.get-in-touch {
+  background-color: red;
+  padding: 10px;
+  border-radius: 15px;
+  color: white !important;
+  font-weight: bolder;
+}
+
 .logo {
   text-decoration: none;
   font-size: 1.5rem;
@@ -1300,9 +1308,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .footer-email {
-    display: none;
   }
   .about-bg-img {
     background: url(images/about-me-left.svg) left no-repeat, url(images/aboutmedesktop-right.svg) right no-repeat;
