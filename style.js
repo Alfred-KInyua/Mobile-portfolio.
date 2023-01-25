@@ -60,7 +60,7 @@ const projects = [
   {
     title: 'Fetch list of countries data from API request ',
     description:
-      'A Countries application that fetches data from an API and provides the countries data such as population, capital city and coat of arms',
+      'A Countries App that fetches data via a RESTful API, and provides the countries data such as population, the capital city, and coat of arms in a simple and elegant design',
     featuredImage: 'images/counts.png',
     image: 'images/counts.jpg',
     teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
@@ -71,7 +71,7 @@ const projects = [
   {
     title: 'Space Travelers',
     description:
-      'This project was developed using SPA (SIngle Page Application) Redux toolkit and Jest testing. It consumes API rocket and mission data and allows users to reserve and or cancel their preferred rockets. It also allows users to choose any mission they are interested in. The chosen rockets and missions are then displayed in the profile section of the SPA',
+      'This project was developed using SPA (Single Page Application) Redux toolkit and Jest testing. It consumes API rocket and mission data and allows users to reserve and or cancel their preferred rockets. It also allows users to choose any mission they are interested in. The chosen rockets and missions are then displayed in the profile section of the SPA',
     featuredImage: 'images/space.jpg',
     image: 'images/space.jpg',
     teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
@@ -90,24 +90,24 @@ const projects = [
       'https://630759fc00a34408cef91404--luminous-kitten-cfcb1a.netlify.app/',
   },
   {
-    title: 'Reserve a Motorcycle',
+    title: 'Clear and Clean ',
     description:
-      'A motorcycle reservation application that allows users to signup, reserve a bike, add bike details, and delete bikes. This app was developed using ReactJs which was responsible for frontend presentation and Ruby on Rails which was responsible  for generating the backend API based on user input',
-    featuredImage: 'images/bikes.png',
-    image: 'images/bike.jpg',
+      'A Javascript page that has a beautiful scroll that is different from other types of scrolls, the page loads fast, is mobile friendly, and is easy to use and apply',
+    featuredImage: 'images/imani2.png',
+    image: 'images/imani.png',
     teachnologies: ['Bootstrap', 'RSpec', 'ReactJs', 'Ruby on Rails'],
     versionURL: 'https://github.com/Alfred-KInyua',
-    sourceURL: 'https://alfred-kinyua.github.io/Mobile-portfolio./',
+    sourceURL: 'https://shimmering-dieffenbachia-3c5c3d.netlify.app/',
   },
   {
-    title: 'Keeping track of hundreds of components',
+    title: 'Math Game',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    featuredImage: 'images/modal.png',
-    image: 'images/Img-Plaholder.svg',
-    teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
+      'A Javascript game application that is both interactive and supports mobile devices. The game allows a player to provide a random number between 1-20, if a user provides the correct number, he wins with high marks. When a user provides a wrong number, the game advises the player as to whether the number provided is higher or lower than the hidden correct number.',
+    featuredImage: 'images/gamesmall.png',
+    image: 'images/game.png',
+    teachnologies: ['Bootstrap', 'Jest', 'Selenium', 'Javascript'],
     versionURL: 'https://github.com/Alfred-KInyua',
-    sourceURL: 'https://alfred-kinyua.github.io/Mobile-portfolio./',
+    sourceURL: 'https://dancing-gnome-b2b6e0.netlify.app/',
   },
 ];
 
