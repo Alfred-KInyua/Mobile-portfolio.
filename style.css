@@ -103,6 +103,14 @@ body {
   text-decoration: none;
 }
 
+.get-in-touch {
+  background-color: red;
+  padding: 10px;
+  border-radius: 15px;
+  color: white !important;
+  font-weight: bolder;
+}
+
 .logo {
   text-decoration: none;
   font-size: 1.5rem;
@@ -941,6 +949,20 @@ body {
     margin: 0 21px;
   }
 
+  .a1:hover,
+  .a2:hover,
+  .a3:hover,
+  .a4:hover,
+  .a5:hover {
+    -webkit-transform: scale(1.3) rotate(5deg);
+    transform: scale(1.3) rotate(5deg);
+  }
+
+  .project:hover {
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+  }
+
   .down-arrow {
     text-align: center;
     margin: 70px auto;
@@ -1033,6 +1055,11 @@ body {
     width: 55%;
     position: relative;
     z-index: 1;
+  }
+
+  .about-text {
+    text-align: justify;
+    line-height: 1.7em;
   }
 
   .about-bg-imgs {
@@ -1349,10 +1376,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-
-  .footer-email {
-    display: none;
   }
 
   .about-bg-img {

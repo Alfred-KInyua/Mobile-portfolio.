@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -87,6 +87,14 @@ body {
 .menu li a {
   color: #344563;
   text-decoration: none;
+}
+
+.get-in-touch {
+  background-color: red;
+  padding: 10px;
+  border-radius: 15px;
+  color: white !important;
+  font-weight: bolder;
 }
 
 .logo {
@@ -743,6 +751,18 @@ body {
     margin: 0 21px;
   }
 
+  .a1:hover,
+  .a2:hover,
+  .a3:hover,
+  .a4:hover,
+  .a5:hover {
+    transform: scale(1.3) rotate(5deg);
+  }
+
+  .project:hover {
+    transform: scale(1.01);
+  }
+
   .down-arrow {
     text-align: center;
     margin: 70px auto;
@@ -817,6 +837,11 @@ body {
     width: 55%;
     position: relative;
     z-index: 1;
+  }
+
+  .about-text {
+    text-align: justify;
+    line-height: 1.7em;
   }
 
   .about-bg-imgs {
@@ -1058,10 +1083,6 @@ body {
     display: flex;
   }
 
-  .footer-email {
-    display: none;
-  }
-
   .about-bg-img {
     background:
       url(images/about-me-left.svg) left no-repeat,
@@ -1071,8 +1092,7 @@ body {
   .contact-bg-img {
     float: right;
     background:
-      url(images/left-img.svg) left bottom
-      no-repeat,
+      url(images/left-img.svg) left bottom no-repeat,
       url(images/right-img.svg) right bottom no-repeat;
   }
 }
@@ -1271,17 +1291,14 @@ body {
 
   .about-bg-img {
     background:
-      url(images/about-me-left.svg) left bottom
-      no-repeat,
-      url(images/aboutmedesktop-right.svg) right top
-      no-repeat;
+      url(images/about-me-left.svg) left bottom no-repeat,
+      url(images/aboutmedesktop-right.svg) right top no-repeat;
     background-size: 100px, 500px, auto;
   }
 
   .contact-bg-img {
     background:
-      url(images/left-img.svg) left bottom
-      no-repeat,
+      url(images/left-img.svg) left bottom no-repeat,
       url(images/right-img.svg) right bottom no-repeat;
     background-size: 0, 80px, auto;
   }
