@@ -371,12 +371,13 @@ body {
 
 .skill-item {
   background-image: url(images/ImgPlaholder.png);
+  max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px auto;
+  padding: 2em auto;
   border: none;
-  height: 352px;
+  height: 22em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1138,8 +1139,7 @@ body {
   }
 
   .grid-item {
-    width: 80%;
-    margin: 0 auto;
+    max-width: 100%;
   }
 
   .technologies li {
