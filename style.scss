@@ -1085,13 +1085,15 @@ body {
   }
 
   .about-bg-img {
-    background: url(images/about-me-left.svg) left no-repeat,
+    background:
+      url(images/about-me-left.svg) left no-repeat,
       url(images/aboutmedesktop-right.svg) right no-repeat;
   }
 
   .contact-bg-img {
     float: right;
-    background: url(images/left-img.svg) left bottom no-repeat,
+    background:
+      url(images/left-img.svg) left bottom no-repeat,
       url(images/right-img.svg) right bottom no-repeat;
   }
 }
@@ -1288,13 +1290,15 @@ body {
   }
 
   .about-bg-img {
-    background: url(images/about-me-left.svg) left bottom no-repeat,
+    background:
+      url(images/about-me-left.svg) left bottom no-repeat,
       url(images/aboutmedesktop-right.svg) right top no-repeat;
     background-size: 100px, 500px, auto;
   }
 
   .contact-bg-img {
-    background: url(images/left-img.svg) left bottom no-repeat,
+    background:
+      url(images/left-img.svg) left bottom no-repeat,
       url(images/right-img.svg) right bottom no-repeat;
     background-size: 0, 80px, auto;
   }
