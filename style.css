@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -8,8 +8,13 @@
 }
 
 body {
-  color: #172b4d;
+  color: white;
   font-family: Inter, sans-serif;
+}
+.pdescription {
+  color: white;
+  /* color: #172b4d; */
+  font-weight: bolder;
 }
 
 .primary {
@@ -28,6 +33,11 @@ body {
 }
 
 .container {
+  background-image: url(images/bggreens.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,10 +51,11 @@ body {
 }
 
 .toolbar {
-  padding: 26px 24px;
-  background: transparent;
-  height: 72px;
-  top: 0;
+  /* background-color: red; */
+  /* padding: 26px 24px; */
+  /* background: transparent; */
+  /* height: 72px; */
+  /* top: 0; */
 }
 
 .green-btn a {
@@ -839,7 +850,7 @@ body {
   }
 
   .toolbar {
-    background: white;
+    /* background: white; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -884,7 +895,8 @@ body {
   }
 
   .section-bg-image {
-    background-image: url(images/header-bg.svg);
+    /* background-image: url(images/header-bg.svg); */
+    background-image: url(images/bggreens.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1380,18 +1392,20 @@ body {
   }
 
   .about-bg-img {
-    background: url(images/about-me-left.svg) left no-repeat, url(images/aboutmedesktop-right.svg) right no-repeat;
+    background: url(images/about-me-left.svg) left no-repeat,
+      url(images/aboutmedesktop-right.svg) right no-repeat;
   }
 
   .contact-bg-img {
     float: right;
-    background: url(images/left-img.svg) left bottom no-repeat, url(images/right-img.svg) right bottom no-repeat;
+    background: url(images/left-img.svg) left bottom no-repeat,
+      url(images/right-img.svg) right bottom no-repeat;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .toolbar {
-    background: white;
+    /* background: white; */
   }
 
   .nav-menu {
@@ -1630,12 +1644,14 @@ body {
   }
 
   .about-bg-img {
-    background: url(images/about-me-left.svg) left bottom no-repeat, url(images/aboutmedesktop-right.svg) right top no-repeat;
+    background: url(images/about-me-left.svg) left bottom no-repeat,
+      url(images/aboutmedesktop-right.svg) right top no-repeat;
     background-size: 100px, 500px, auto;
   }
 
   .contact-bg-img {
-    background: url(images/left-img.svg) left bottom no-repeat, url(images/right-img.svg) right bottom no-repeat;
+    background: url(images/left-img.svg) left bottom no-repeat,
+      url(images/right-img.svg) right bottom no-repeat;
     background-size: 0, 80px, auto;
   }
 }
