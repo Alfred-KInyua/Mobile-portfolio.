@@ -19,7 +19,7 @@ document.querySelectorAll('.menu').forEach((link) => {
   });
 });
 
-//create form validation section
+// create form validation section
 const targetEmailInput = document.getElementById('email');
 const displayError = document.querySelector('#feedback');
 const form = document.querySelector('form');
@@ -34,7 +34,7 @@ function showPassed() {
   displayError.style.color = '#00ff00';
 }
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit', (event) => {
   const pattern = /^[a-z0-9@.]+$/;
   if (!pattern.test(targetEmailInput.value)) {
     showError();
