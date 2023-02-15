@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 .menu-link {
   color: #fff;
   font-size: 19pt;
@@ -17,11 +21,9 @@
 }
 
 .hover-2 {
-  background:
-    linear-gradient(#1095c1 0 0) no-repeat calc(200% - var(--p, 0%))
+  background: linear-gradient(#1095c1 0 0) no-repeat calc(200% - var(--p, 0%))
     100% / 200% var(--p, 0.08em);
-  transition:
-    0.3s var(--t, 0s),
+  transition: 0.3s var(--t, 0s),
     background-position 0.3s calc(0.3s - var(--t, 0s));
 }
 
@@ -35,12 +37,10 @@
 .hover-3 {
   --c: no-repeat linear-gradient(#1095c1 0 0);
 
-  background:
-    var(--c) calc(-101% + var(--p, 0%)) 100%,
+  background: var(--c) calc(-101% + var(--p, 0%)) 100%,
     var(--c) calc(201% - var(--p, 0%)) 0;
   background-size: 50.1% var(--p, 0.08em);
-  transition:
-    0.3s var(--t, 0s),
+  transition: 0.3s var(--t, 0s),
     background-position 0.3s calc(0.3s - var(--t, 0s));
 }
 
@@ -55,11 +55,10 @@
   --c: #1095c1;
 
   line-height: 1.2em;
-  background:
-    conic-gradient(from -135deg at 100% 50%, var(--c) 90deg, #0000 0)
-    0 var(--p, 0%),
+  background: conic-gradient(from -135deg at 100% 50%, var(--c) 90deg, #0000 0)
+      0 var(--p, 0%),
     conic-gradient(from -135deg at 1.2em 50%, #0000 90deg, var(--c) 0) 100%
-    var(--p, 0%);
+      var(--p, 0%);
   background-size: var(--s, 0%) 200%;
   background-repeat: no-repeat;
   transition: 0.4s ease-in, background-position 0s;
@@ -67,10 +66,9 @@
 
 .hover-4:hover {
   --p: 100%;
-  --s:
-    calc(
-      50% + 0.61em
-    ); /* it should be 0.6em(1.2em/2) but we use a litte bigger */
+  --s: calc(
+    50% + 0.61em
+  ); /* it should be 0.6em(1.2em/2) but we use a litte bigger */
 
   color: #fff;
 }
@@ -105,17 +103,14 @@ body {
 }
 
 .container {
-  background-color: black;
+  background-color: #233329;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .toolbar {
-  padding: 26px 24px;
-  background: transparent;
-  height: 72px;
-  top: 0;
+  height: 50px;
 }
 
 .green-btn a {
@@ -151,7 +146,6 @@ body {
   width: 80%;
   text-align: center;
   justify-content: space-between !important;
-  margin: 24px auto;
 }
 
 .menu {
@@ -169,10 +163,9 @@ body {
 }
 
 .get-in-touch {
-  background-color: red;
+  color: red !important;
   padding: 10px;
   border-radius: 15px;
-  color: white !important;
   font-weight: bolder;
 }
 
@@ -245,9 +238,11 @@ body {
   align-items: center;
   margin: 24px auto;
 }
-
+.headerImages {
+  position: relative;
+}
 .section-bg-image {
-  background-image: url(images/header-bg.svg);
+  background-image: url(images/red.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -338,10 +333,7 @@ body {
 }
 
 .grid-item {
-  box-shadow: -4px -5px 34px 29px rgba(26, 242, 35, 0.55);
-  -webkit-box-shadow: -4px -5px 34px 29px rgba(26, 242, 35, 0.55);
-  -moz-box-shadow: -4px -5px 34px 29px rgba(26, 242, 35, 0.55);
-  border: 1px solid #d6d5da;
+  border: 3px solid #d6d5da;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -369,12 +361,13 @@ body {
   border-radius: 5px;
   margin: 10px auto;
   flex: 1;
+  color: #000;
 }
 
 .item-title {
   text-align: center;
   margin: 16px;
-  color: #000;
+  color: #fff;
 }
 
 .frameworks li {
@@ -400,7 +393,8 @@ body {
 
 .technologies li a {
   text-decoration: none;
-  color: rgba(127, 140, 255, 1);
+  // color: rgba(127, 140, 255, 1);
+  color: #000;
 }
 
 .green-btn a:hover {
@@ -453,9 +447,6 @@ body {
 }
 
 .skill-item {
-  box-shadow: -4px -5px 34px 29px rgba(26, 242, 35, 0.55);
-  -webkit-box-shadow: -4px -5px 34px 29px rgba(26, 242, 35, 0.55);
-  -moz-box-shadow: -4px -5px 34px 29px rgba(26, 242, 35, 0.55);
   background-image: url(images/ImgPlaholder.png);
   max-width: 100%;
   background-position: center;
@@ -471,7 +462,7 @@ body {
 
 .item-icon {
   // background-color: #fff;
-  background-color: black;
+  background-color: #000;
   border-radius: 50%;
   margin: 30px auto;
   justify-content: center;
@@ -646,12 +637,15 @@ body {
 }
 
 .close {
+  margin-top: 20px;
+  color: #fff;
+  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: #ebecf0;
+  background: #000;
   border-radius: 8px;
   float: right;
   right: 24px;
@@ -697,6 +691,7 @@ body {
 .project-title h2 {
   flex: 1;
   word-wrap: break-word;
+  color: #000;
 }
 
 .view-btn {
@@ -725,6 +720,7 @@ body {
 .project-description p {
   text-align: justify;
   line-height: 1.5;
+  color: #000;
 }
 
 .bottom-line {
@@ -745,14 +741,15 @@ body {
 
 @media only screen and (min-width: 769px) and (max-width: 1440px) {
   .container {
-    background-color: black;
+    background-color: #233329;
+
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .toolbar {
-    background: #000;
+    background: #233329;
     display: flex;
     justify-content: center;
   }
@@ -785,7 +782,7 @@ body {
   }
 
   .section-bg-image {
-    background-color: black;
+    background-color: #233329;
     // background-image: url(images/header-bg.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -888,10 +885,14 @@ body {
   .item-description {
     border-radius: 5px;
     margin: 10px auto;
+    color: #000;
   }
 
   .item-title {
     text-align: center;
+    color: #fff;
+  }
+  .item-titles {
     color: #000;
   }
 
@@ -1142,6 +1143,7 @@ body {
     font-size: 0.75rem;
     border-radius: 5px;
     white-space: nowrap;
+    color: #000;
   }
 
   .project-description {
@@ -1151,6 +1153,7 @@ body {
   .project-description p {
     text-align: justify;
     line-height: 1.5;
+    color: #000;
   }
 
   .green-btn a:hover {
@@ -1174,24 +1177,37 @@ body {
   }
 
   .about-bg-img {
-    background:
-      url(images/about-me-left.svg) left no-repeat,
+    background: url(images/about-me-left.svg) left no-repeat,
       url(images/aboutmedesktop-right.svg) right no-repeat;
   }
 
   .contact-bg-img {
     float: right;
-    background:
-      url(images/left-img.svg) left bottom no-repeat,
+    background: url(images/left-img.svg) left bottom no-repeat,
       url(images/right-img.svg) right bottom no-repeat;
+  }
+  .one {
+    position: absolute;
+    transform: translate(-10%, 300%);
+    overflow: hidden;
+  }
+
+  .two {
+    position: absolute;
+
+    transform: translate(460%, 290%) scaleX(-1);
+    overflow: hidden;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .toolbar {
-    background: #000;
+    background: #233329;
   }
-
+  .one,
+  .two {
+    display: none;
+  }
   .nav-menu {
     justify-content: space-between;
     display: flex !important;
@@ -1241,7 +1257,7 @@ body {
   .item-title {
     text-align: center;
     margin: 12px;
-    color: #000;
+    color: #fff;
   }
 
   .contacts-row {
@@ -1287,12 +1303,13 @@ body {
     justify-content: center;
     width: 40px;
     height: 40px;
-    right: 24px;
-    top: 24px;
-    background: #ebecf0;
+    right: 0px;
+    top: 0px;
+    background: #000;
     border-radius: 8px;
     float: right;
     position: absolute;
+    color: #fff;
   }
 
   .project-image {
@@ -1337,10 +1354,13 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-
+  .item-titles {
+    color: #000;
+  }
   .technologies li a {
     text-decoration: none;
-    color: rgba(127, 140, 255, 1);
+    // color: rgba(127, 140, 255, 1);
+    color: #000;
   }
 
   .technologies li:hover {
@@ -1383,15 +1403,13 @@ body {
   }
 
   .about-bg-img {
-    background:
-      url(images/about-me-left.svg) left bottom no-repeat,
+    background: url(images/about-me-left.svg) left bottom no-repeat,
       url(images/aboutmedesktop-right.svg) right top no-repeat;
     background-size: 100px, 500px, auto;
   }
 
   .contact-bg-img {
-    background:
-      url(images/left-img.svg) left bottom no-repeat,
+    background: url(images/left-img.svg) left bottom no-repeat,
       url(images/right-img.svg) right bottom no-repeat;
     background-size: 0, 80px, auto;
   }
@@ -1581,14 +1599,13 @@ span:nth-child(39) {
 
 .animate-charcter {
   text-transform: uppercase;
-  background-image:
-    linear-gradient(
-      -225deg,
-      #231557 0%,
-      #44107a 29%,
-      #ff1361 67%,
-      #fff800 100%
-    );
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
