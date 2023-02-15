@@ -2,6 +2,12 @@ const hamburger = document.querySelector('.hamburger');
 const overlay = document.querySelector('.overlay');
 const menu = document.querySelector('.menu');
 const logo = document.querySelector('.logo');
+const bar = document.querySelector('.bar');
+const barHandler = () => {
+  bar.className += ' barWhite';
+};
+
+bar.addEventListener('click', () => barHandler);
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');

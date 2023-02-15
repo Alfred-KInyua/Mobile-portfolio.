@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 .toolbar {
   position: sticky;
   top: 0;
   z-index: 100;
+  height: 50px;
 }
+
 .menu-link {
   color: #fff;
   font-size: 19pt;
@@ -109,10 +112,6 @@ body {
   align-items: center;
 }
 
-.toolbar {
-  height: 50px;
-}
-
 .green-btn a {
   background-color: #36b37e;
   color: #fff;
@@ -200,8 +199,11 @@ body {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background-color: #1a1b1b;
+  background-color: #fff;
   transition: all 0.3s ease-in-out;
+}
+.barWhite {
+  background-color: #1a1b1b;
 }
 
 .hamburger.active .bar:nth-child(1) {
@@ -238,9 +240,11 @@ body {
   align-items: center;
   margin: 24px auto;
 }
+
 .headerImages {
   position: relative;
 }
+
 .section-bg-image {
   background-image: url(images/red.jpg);
   background-position: center;
@@ -742,7 +746,6 @@ body {
 @media only screen and (min-width: 769px) and (max-width: 1440px) {
   .container {
     background-color: #233329;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -892,6 +895,7 @@ body {
     text-align: center;
     color: #fff;
   }
+
   .item-titles {
     color: #000;
   }
@@ -1186,6 +1190,7 @@ body {
     background: url(images/left-img.svg) left bottom no-repeat,
       url(images/right-img.svg) right bottom no-repeat;
   }
+
   .one {
     position: absolute;
     transform: translate(-10%, 300%);
@@ -1194,7 +1199,6 @@ body {
 
   .two {
     position: absolute;
-
     transform: translate(460%, 290%) scaleX(-1);
     overflow: hidden;
   }
@@ -1204,10 +1208,12 @@ body {
   .toolbar {
     background: #233329;
   }
+
   .one,
   .two {
     display: none;
   }
+
   .nav-menu {
     justify-content: space-between;
     display: flex !important;
@@ -1303,8 +1309,8 @@ body {
     justify-content: center;
     width: 40px;
     height: 40px;
-    right: 0px;
-    top: 0px;
+    right: 0;
+    top: 0;
     background: #000;
     border-radius: 8px;
     float: right;
@@ -1354,9 +1360,11 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+
   .item-titles {
     color: #000;
   }
+
   .technologies li a {
     text-decoration: none;
     // color: rgba(127, 140, 255, 1);
