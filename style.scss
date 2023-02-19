@@ -1,5 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 50px;
+}
+
+.menu-link {
+  color: #fff;
+  font-size: 19pt;
+}
+/////////////////hover/////////////////////
+.hover-1 {
+  background: linear-gradient(#1095c1 0 0) var(--p, 0) / var(--p, 0) no-repeat;
+  transition: 0.4s, background-position 0s;
+}
+
+.hover-1:hover {
+  --p: 100%;
+
+  color: #fff;
+}
+
+.hover-2 {
+  background: linear-gradient(#1095c1 0 0) no-repeat calc(200% - var(--p, 0%))
+    100% / 200% var(--p, 0.08em);
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.hover-2:hover {
+  --p: 100%;
+  --t: 0.3s;
+
+  color: #fff;
+}
+
+.hover-3 {
+  --c: no-repeat linear-gradient(#1095c1 0 0);
+
+  background: var(--c) calc(-101% + var(--p, 0%)) 100%,
+    var(--c) calc(201% - var(--p, 0%)) 0;
+  background-size: 50.1% var(--p, 0.08em);
+  transition: 0.3s var(--t, 0s),
+    background-position 0.3s calc(0.3s - var(--t, 0s));
+}
+
+.hover-3:hover {
+  --p: 101%;
+  --t: 0.3s;
+
+  color: #fff;
+}
+
+.hover-4 {
+  --c: #1095c1;
+
+  line-height: 1.2em;
+  background: conic-gradient(from -135deg at 100% 50%, var(--c) 90deg, #0000 0)
+      0 var(--p, 0%),
+    conic-gradient(from -135deg at 1.2em 50%, #0000 90deg, var(--c) 0) 100%
+      var(--p, 0%);
+  background-size: var(--s, 0%) 200%;
+  background-repeat: no-repeat;
+  transition: 0.4s ease-in, background-position 0s;
+}
+
+.hover-4:hover {
+  --p: 100%;
+  --s: calc(
+    50% + 0.61em
+  ); /* it should be 0.6em(1.2em/2) but we use a litte bigger */
+
+  color: #fff;
+}
+
+//////////////hover////////////////////////
 * {
   margin: 0;
   padding: 0;
@@ -7,19 +84,21 @@
 }
 
 body {
-  color: #172b4d;
+  color: #fff;
   font-family: Inter, sans-serif;
 }
 
 .primary {
-  color: #172b4d;
+  // color: #172b4d;
+  color: #fff;
 }
 
 .primary-text {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  color: #172b4d;
+  // color: #172b4d;
+  color: white;
 }
 
 .secondary {
@@ -27,16 +106,10 @@ body {
 }
 
 .container {
+  background-color: #233329;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.toolbar {
-  padding: 26px 24px;
-  background: transparent;
-  height: 72px;
-  top: 0;
 }
 
 .green-btn a {
@@ -72,7 +145,6 @@ body {
   width: 80%;
   text-align: center;
   justify-content: space-between !important;
-  margin: 24px auto;
 }
 
 .menu {
@@ -85,15 +157,14 @@ body {
 }
 
 .menu li a {
-  color: #344563;
+  color: #fff;
   text-decoration: none;
 }
 
 .get-in-touch {
-  background-color: red;
+  color: red !important;
   padding: 10px;
   border-radius: 15px;
-  color: white !important;
   font-weight: bolder;
 }
 
@@ -128,8 +199,12 @@ body {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background-color: #1a1b1b;
+  background-color: #fff;
   transition: all 0.3s ease-in-out;
+}
+
+.barWhite {
+  background-color: #1a1b1b;
 }
 
 .hamburger.active .bar:nth-child(1) {
@@ -167,8 +242,12 @@ body {
   margin: 24px auto;
 }
 
+.headerImages {
+  position: relative;
+}
+
 .section-bg-image {
-  background-image: url(images/header-bg.svg);
+  background-image: url(images/red.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -217,7 +296,7 @@ body {
 }
 
 .social-icons a i {
-  color: #172b4d;
+  // color: #172b4d;
   height: 20px;
   width: 18px;
   margin: 0 21px;
@@ -259,7 +338,7 @@ body {
 }
 
 .grid-item {
-  border: 1px solid #d6d5da;
+  border: 3px solid #d6d5da;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -287,16 +366,18 @@ body {
   border-radius: 5px;
   margin: 10px auto;
   flex: 1;
+  color: #000;
 }
 
 .item-title {
   text-align: center;
   margin: 16px;
+  color: #fff;
 }
 
 .frameworks li {
   padding: 10px;
-  background-color: rgba(235, 240, 238, 1);
+  background-color: #000;
   text-align: center;
   margin: 5px 5px;
   font-size: 0.65rem;
@@ -317,7 +398,8 @@ body {
 
 .technologies li a {
   text-decoration: none;
-  color: rgba(127, 140, 255, 1);
+  // color: rgba(127, 140, 255, 1);
+  color: #000;
 }
 
 .green-btn a:hover {
@@ -346,7 +428,7 @@ body {
   font-size: 0.75rem;
   border-radius: 5px;
   float: left;
-  color: rgba(127, 140, 255, 1);
+  color: white;
 }
 
 .green-btn {
@@ -384,7 +466,8 @@ body {
 }
 
 .item-icon {
-  background-color: #fff;
+  // background-color: #fff;
+  background-color: #000;
   border-radius: 50%;
   margin: 30px auto;
   justify-content: center;
@@ -409,8 +492,8 @@ body {
 
 .item-langs li {
   padding: 10px;
-  background-color: #fff;
-  color: #36b37e;
+  background-color: #000;
+  color: #fff;
   text-align: center;
   margin: 5px 5px;
   font-size: 0.75rem;
@@ -559,12 +642,15 @@ body {
 }
 
 .close {
+  margin-top: 20px;
+  color: #fff;
+  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: #ebecf0;
+  background: #000;
   border-radius: 8px;
   float: right;
   right: 24px;
@@ -610,6 +696,7 @@ body {
 .project-title h2 {
   flex: 1;
   word-wrap: break-word;
+  color: #000;
 }
 
 .view-btn {
@@ -638,6 +725,7 @@ body {
 .project-description p {
   text-align: justify;
   line-height: 1.5;
+  color: #000;
 }
 
 .bottom-line {
@@ -658,13 +746,14 @@ body {
 
 @media only screen and (min-width: 769px) and (max-width: 1440px) {
   .container {
+    background-color: #233329;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .toolbar {
-    background: white;
+    background: #233329;
     display: flex;
     justify-content: center;
   }
@@ -697,7 +786,8 @@ body {
   }
 
   .section-bg-image {
-    background-image: url(images/header-bg.svg);
+    background-color: #233329;
+    // background-image: url(images/header-bg.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -746,7 +836,6 @@ body {
   }
 
   .social-icons a i {
-    color: #172b4d;
     height: 20px;
     width: 18px;
     margin: 0 21px;
@@ -800,10 +889,16 @@ body {
   .item-description {
     border-radius: 5px;
     margin: 10px auto;
+    color: #000;
   }
 
   .item-title {
     text-align: center;
+    color: #fff;
+  }
+
+  .item-titles {
+    color: #000;
   }
 
   .technologies {
@@ -861,7 +956,7 @@ body {
   }
 
   .item-icon {
-    background-color: #fff;
+    background-color: #000;
     border-radius: 50%;
     margin: 30px auto;
     justify-content: center;
@@ -886,11 +981,11 @@ body {
 
   .item-langs li {
     padding: 10px;
-    background-color: #fff;
-    color: #36b37e;
+    background-color: #000;
+    color: #fff;
     text-align: center;
     margin: 5px 5px;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     border-radius: 5px;
     white-space: nowrap;
   }
@@ -1053,6 +1148,7 @@ body {
     font-size: 0.75rem;
     border-radius: 5px;
     white-space: nowrap;
+    color: #000;
   }
 
   .project-description {
@@ -1062,6 +1158,7 @@ body {
   .project-description p {
     text-align: justify;
     line-height: 1.5;
+    color: #000;
   }
 
   .green-btn a:hover {
@@ -1085,22 +1182,37 @@ body {
   }
 
   .about-bg-img {
-    background:
-      url(images/about-me-left.svg) left no-repeat,
+    background: url(images/about-me-left.svg) left no-repeat,
       url(images/aboutmedesktop-right.svg) right no-repeat;
   }
 
   .contact-bg-img {
     float: right;
-    background:
-      url(images/left-img.svg) left bottom no-repeat,
+    background: url(images/left-img.svg) left bottom no-repeat,
       url(images/right-img.svg) right bottom no-repeat;
+  }
+
+  .one {
+    position: absolute;
+    transform: translate(-10%, 300%);
+    overflow: hidden;
+  }
+
+  .two {
+    position: absolute;
+    transform: translate(438%, 290%) scaleX(-1);
+    overflow: hidden;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .toolbar {
-    background: white;
+    background: #233329;
+  }
+
+  .one,
+  .two {
+    display: none;
   }
 
   .nav-menu {
@@ -1139,6 +1251,9 @@ body {
   }
 
   .grid-item {
+    box-shadow: -4px -5px 34px 29px rgba(26, 242, 35, 0.55);
+    -webkit-box-shadow: -4px -5px 34px 29px rgba(26, 242, 35, 0.55);
+    -moz-box-shadow: -4px -5px 34px 29px rgba(26, 242, 35, 0.55);
     max-width: 100%;
   }
 
@@ -1149,6 +1264,7 @@ body {
   .item-title {
     text-align: center;
     margin: 12px;
+    color: #fff;
   }
 
   .contacts-row {
@@ -1194,12 +1310,13 @@ body {
     justify-content: center;
     width: 40px;
     height: 40px;
-    right: 24px;
-    top: 24px;
-    background: #ebecf0;
+    right: 0;
+    top: 0;
+    background: #000;
     border-radius: 8px;
     float: right;
     position: absolute;
+    color: #fff;
   }
 
   .project-image {
@@ -1245,9 +1362,14 @@ body {
     justify-content: space-between;
   }
 
+  .item-titles {
+    color: #000;
+  }
+
   .technologies li a {
     text-decoration: none;
-    color: rgba(127, 140, 255, 1);
+    // color: rgba(127, 140, 255, 1);
+    color: #000;
   }
 
   .technologies li:hover {
@@ -1290,16 +1412,220 @@ body {
   }
 
   .about-bg-img {
-    background:
-      url(images/about-me-left.svg) left bottom no-repeat,
+    background: url(images/about-me-left.svg) left bottom no-repeat,
       url(images/aboutmedesktop-right.svg) right top no-repeat;
     background-size: 100px, 500px, auto;
   }
 
   .contact-bg-img {
-    background:
-      url(images/left-img.svg) left bottom no-repeat,
+    background: url(images/left-img.svg) left bottom no-repeat,
       url(images/right-img.svg) right bottom no-repeat;
     background-size: 0, 80px, auto;
   }
 }
+///////////////word anime////////////////////////////////
+.anima {
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(19) {
+  animation: fade-in 0.8s 1.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(20) {
+  animation: fade-in 0.8s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(21) {
+  animation: fade-in 0.8s 2.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(22) {
+  animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(23) {
+  animation: fade-in 0.8s 2.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(24) {
+  animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(25) {
+  animation: fade-in 0.8s 2.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(26) {
+  animation: fade-in 0.8s 2.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(27) {
+  animation: fade-in 0.8s 2.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(28) {
+  animation: fade-in 0.8s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(29) {
+  animation: fade-in 0.8s 2.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(30) {
+  animation: fade-in 0.8s 3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(31) {
+  animation: fade-in 0.8s 3.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(32) {
+  animation: fade-in 0.8s 3.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(33) {
+  animation: fade-in 0.8s 3.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(34) {
+  animation: fade-in 0.8s 3.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(35) {
+  animation: fade-in 0.8s 3.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(36) {
+  animation: fade-in 0.8s 3.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(37) {
+  animation: fade-in 0.8s 3.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(38) {
+  animation: fade-in 0.8s 3.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(39) {
+  animation: fade-in 0.8s 3.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+//////////////////end//////////////
+/////////////////////////////Animate character/////////////////////
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+//////////////end////////////////////////

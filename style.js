@@ -2,6 +2,12 @@ const hamburger = document.querySelector('.hamburger');
 const overlay = document.querySelector('.overlay');
 const menu = document.querySelector('.menu');
 const logo = document.querySelector('.logo');
+const bar = document.querySelector('.bar');
+const barHandler = () => {
+  bar.className += ' barWhite';
+};
+
+bar.addEventListener('click', () => barHandler);
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
@@ -19,7 +25,7 @@ document.querySelectorAll('.menu').forEach((link) => {
   });
 });
 
-//create form validation section
+// create form validation section
 const targetEmailInput = document.getElementById('email');
 const displayError = document.querySelector('#feedback');
 const form = document.querySelector('form');
@@ -34,7 +40,7 @@ function showPassed() {
   displayError.style.color = '#00ff00';
 }
 
-form.addEventListener('submit', function (event) {
+form.addEventListener('submit', (event) => {
   const pattern = /^[a-z0-9@.]+$/;
   if (!pattern.test(targetEmailInput.value)) {
     showError();
@@ -50,63 +56,63 @@ const projects = [
   {
     title: 'To do list Application Program',
     description:
-      ' My todo-ist app has a simplified, user-friendly GUI letting you navigate a powerful set of features, myToDo stands out of the crowd when it comes to helping with task completion.',
+      ' My to-do list application has a simple and easy-to-use user interface and is highly responsive. The application allows a user to type in as many activities as possible and when complete a user can mark them as complete or delete them.',
     featuredImage: 'images/todolist.jpg',
     image: 'images/todolist.jpg',
-    teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
-    versionURL: 'https://github.com/Alfred-KInyua',
+    teachnologies: ['Bootstrap', 'RSpec', 'HTML', 'JavaScript'],
+    versionURL: 'https://github.com/Alfred-KInyua/to-do-list-project-',
     sourceURL: 'https://alfred-kinyua.github.io/to-do-list-project-/',
   },
   {
-    title: 'Fetch list of countries data from API request ',
+    title: 'Fetch a list of countries data from an API request ',
     description:
-      'A Countries App that fetches data via a RESTful API, and provides the countries data such as population, the capital city, and coat of arms in a simple and elegant design',
+      'An application that fetches data via a RESTful API service, and provides data such as population, the capital city, and coat of arms in a simple and elegant design',
     featuredImage: 'images/counts.png',
     image: 'images/counts.jpg',
-    teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
-    versionURL: 'https://github.com/Alfred-KInyua',
+    teachnologies: ['Bootstrap', 'Jest', 'Selenium', 'ReactJs'],
+    versionURL: 'https://github.com/Alfred-KInyua/rest-countries',
     sourceURL:
       'https://deploy-preview-1--precious-rabanadas-551da9.netlify.app/',
   },
   {
     title: 'Space Travelers',
     description:
-      'This project was developed using SPA (Single Page Application) Redux toolkit and Jest testing. It consumes API rocket and mission data and allows users to reserve and or cancel their preferred rockets. It also allows users to choose any mission they are interested in. The chosen rockets and missions are then displayed in the profile section of the SPA',
-    featuredImage: 'images/space.jpg',
+      'Build a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions. the webiste uses real live data from the SpaceX API.',
+    featuredImage: 'images/space.png',
     image: 'images/space.jpg',
-    teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
-    versionURL: 'https://github.com/Alfred-KInyua',
+    teachnologies: ['Redux Toolkit', 'JavaScript', 'Babel', 'ReactJs'],
+    versionURL: 'https://github.com/Alfred-KInyua/spacetravellorshub',
     sourceURL: 'https://deploy-preview-56--cute-cranachan-7538ff.netlify.app/',
   },
   {
     title: 'Leaderboard App',
     description:
-      'A JavaScript project for the Leader-board list app, developed using Webpack and ES6 features, notably modules. This app was developed using a working version of the app following the provided Wireframe, with styling data, focused on functionality.',
+      'A JavaScript project for the Leaderboard list app. The game captures players" scores and stores them in local storage for persistence. The scores are arranged from highest to lowest.  This app was developed using the provided Wireframe, with styling data, focused on functionality',
     featuredImage: './images/scores.jpg',
     image: 'images/scores.jpg',
-    teachnologies: ['Bootstrap', 'RSpec', 'Selenium', 'Ruby on Rails'],
-    versionURL: 'https://github.com/Alfred-KInyua',
+    teachnologies: ['Bootstrap', 'RSpec', 'Jest', 'JavaScript'],
+    versionURL: 'https://github.com/Alfred-KInyua/Leaderboard-setup-project',
     sourceURL:
       'https://630759fc00a34408cef91404--luminous-kitten-cfcb1a.netlify.app/',
   },
   {
-    title: 'Clear and Clean ',
+    title: 'Team Viewer ',
     description:
-      'A Javascript page that has a beautiful scroll that is different from other types of scrolls, the page loads fast, is mobile friendly, and is easy to use and apply',
-    featuredImage: 'images/imani2.png',
-    image: 'images/imani.png',
-    teachnologies: ['Bootstrap', 'RSpec', 'ReactJs', 'Ruby on Rails'],
+      'A react single page application that allows employers or team managers to group their teams according to tasks given, this will ensure all team managers are aware of team members activities and groups they belong to',
+    featuredImage: 'images/teamMembers.png',
+    image: 'images/teamMember.png',
+    teachnologies: ['Bootstrap', 'jest', 'ReactJs', 'Redux'],
     versionURL: 'https://github.com/Alfred-KInyua',
-    sourceURL: 'https://shimmering-dieffenbachia-3c5c3d.netlify.app/',
+    sourceURL: 'https://mellifluous-custard-8f3222.netlify.app/',
   },
   {
     title: 'Math Game',
     description:
-      'A Javascript game application that is both interactive and supports mobile devices. The game allows a player to provide a random number between 1-20, if a user provides the correct number, he wins with high marks. When a user provides a wrong number, the game advises the player as to whether the number provided is higher or lower than the hidden correct number.',
+      'A Javascript game application that is both interactive and supports mobile devices. The game allows a player to provide a random number between 1-20, if a user provides the correct number, he wins with high marks, if a user provides a wrong number, the game advises the player as to whether the number provided is higher or lower than the hidden correct number.',
     featuredImage: 'images/gamesmall.png',
     image: 'images/game.png',
     teachnologies: ['Bootstrap', 'Jest', 'Selenium', 'Javascript'],
-    versionURL: 'https://github.com/Alfred-KInyua',
+    versionURL: 'https://github.com/Alfred-KInyua/play-a-game-',
     sourceURL: 'https://dancing-gnome-b2b6e0.netlify.app/',
   },
 ];
