@@ -372,6 +372,7 @@ body {
 
 .grid-item {
   border: 3px solid #d6d5da;
+  background-color: #d3f7e944;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1460,9 +1461,6 @@ body {
         grid-template-columns: 1fr;
   }
   .grid-item {
-    box-shadow: -4px -5px 34px 29px rgba(26, 242, 35, 0.55);
-    -webkit-box-shadow: -4px -5px 34px 29px rgba(26, 242, 35, 0.55);
-    -moz-box-shadow: -4px -5px 34px 29px rgba(26, 242, 35, 0.55);
     max-width: 100%;
   }
   .technologies li {
