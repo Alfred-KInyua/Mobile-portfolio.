@@ -54,21 +54,22 @@ form.addEventListener('submit', (event) => {
 
 const projects = [
   {
-    title: 'To do list Application Program',
+    title: 'Bookstore Application',
     description:
-      ' My to-do list application has a simple and easy-to-use user interface and is highly responsive. The application allows a user to type in as many activities as possible and when complete a user can mark them as complete or delete them.',
-    featuredImage: 'images/todolist.jpg',
-    image: 'images/todolist.jpg',
+      'An online bookstore delivery app that allows bookstore owners and authors to add, retrieve and delete books from a remote REST API.(CRUD)',
+    featuredImage: 'images/featuredbook.png',
+    image: 'images/featuredbooks.png',
     teachnologies: ['Bootstrap', 'RSpec', 'HTML', 'JavaScript'],
-    versionURL: 'https://github.com/Alfred-KInyua/to-do-list-project-',
-    sourceURL: 'https://alfred-kinyua.github.io/to-do-list-project-/',
+    versionURL: 'https://github.com/Alfred-KInyua/bookstore-website',
+    sourceURL:
+      'https://deploy-preview-6--endearing-hamster-aaf349.netlify.app/',
   },
   {
     title: 'Fetch a list of countries data from an API request ',
     description:
       'An application that fetches data via a RESTful API service, and provides data such as population, the capital city, and coat of arms in a simple and elegant design',
     featuredImage: 'images/counts.png',
-    image: 'images/counts.jpg',
+    image: 'images/green.png',
     teachnologies: ['Bootstrap', 'Jest', 'Selenium', 'ReactJs'],
     versionURL: 'https://github.com/Alfred-KInyua/rest-countries',
     sourceURL:
@@ -78,8 +79,8 @@ const projects = [
     title: 'Space Travelers',
     description:
       'Build a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions. the webiste uses real live data from the SpaceX API.',
-    featuredImage: 'images/space.png',
-    image: 'images/space.jpg',
+    featuredImage: 'images/spacetravel.png',
+    image: 'images/spacet.png',
     teachnologies: ['Redux Toolkit', 'JavaScript', 'Babel', 'ReactJs'],
     versionURL: 'https://github.com/Alfred-KInyua/spacetravellorshub',
     sourceURL: 'https://deploy-preview-56--cute-cranachan-7538ff.netlify.app/',
@@ -88,8 +89,8 @@ const projects = [
     title: 'Leaderboard App',
     description:
       'A JavaScript project for the Leaderboard list app. The game captures players" scores and stores them in local storage for persistence. The scores are arranged from highest to lowest.  This app was developed using the provided Wireframe, with styling data, focused on functionality',
-    featuredImage: './images/scores.jpg',
-    image: 'images/scores.jpg',
+    featuredImage: './images/featuredLeader.png',
+    image: 'images/featuredLeaderr.png',
     teachnologies: ['Bootstrap', 'RSpec', 'Jest', 'JavaScript'],
     versionURL: 'https://github.com/Alfred-KInyua/Leaderboard-setup-project',
     sourceURL:
@@ -99,8 +100,8 @@ const projects = [
     title: 'Team Viewer ',
     description:
       'A react single page application that allows employers or team managers to group their teams according to tasks given, this will ensure all team managers are aware of team members activities and groups they belong to',
-    featuredImage: 'images/teamMembers.png',
-    image: 'images/teamMember.png',
+    featuredImage: 'images/teams.png',
+    image: 'images/teamsOne.png',
     teachnologies: ['Bootstrap', 'jest', 'ReactJs', 'Redux'],
     versionURL: 'https://github.com/Alfred-KInyua',
     sourceURL: 'https://mellifluous-custard-8f3222.netlify.app/',
@@ -109,8 +110,8 @@ const projects = [
     title: 'Math Game',
     description:
       'A Javascript game application that is both interactive and supports mobile devices. The game allows a player to provide a random number between 1-20, if a user provides the correct number, he wins with high marks, if a user provides a wrong number, the game advises the player as to whether the number provided is higher or lower than the hidden correct number.',
-    featuredImage: 'images/gamesmall.png',
-    image: 'images/game.png',
+    featuredImage: 'images/featuredguess.png',
+    image: 'images/featuredguesss.png',
     teachnologies: ['Bootstrap', 'Jest', 'Selenium', 'Javascript'],
     versionURL: 'https://github.com/Alfred-KInyua/play-a-game-',
     sourceURL: 'https://dancing-gnome-b2b6e0.netlify.app/',
