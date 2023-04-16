@@ -120,35 +120,9 @@ const projects = [
     sourceURL: 'https://mellifluous-custard-8f3222.netlify.app/',
   },
 ];
-const projectHTML = projects.map((obj) => {
-  const tech = obj.technologies;
-  return `<div class="grid-item project">
-    <div class="item-image">
-        <img src="${obj.image}" alt="featured-image">
-    </div>
-    <div class="item-description">
-        <div class="item-title">
-            <h2>${obj.title}</h2>
-        </div>
-       <ul class="technologies">
-          <li> <a href="#">${tech[0]}</a></li>
-          <li> <a href="#">${tech[1]}</a></li>
-          <li> <a href="#">${tech[2]}</a></li>
-          <li> <a href="#">${tech[3]}</a></li>
-      </ul>
-      <div class="green-btn">
-        <a href="" data-modal-target="#project-modal" class="viewProject">See Project</a>
-    </div>
-   </div>
-</div>`;
-});
-
-const project = projectHTML.join('');
-
-// let project = '';
-// for (const obj of projects) {
+// const projectHTML = projects.map((obj) => {
 //   const tech = obj.technologies;
-//   project += `<div class="grid-item project">
+//   return `<div class="grid-item project">
 //     <div class="item-image">
 //         <img src="${obj.image}" alt="featured-image">
 //     </div>
@@ -167,7 +141,33 @@ const project = projectHTML.join('');
 //     </div>
 //    </div>
 // </div>`;
-// }
+// });
+
+// const project = projectHTML.join('');
+
+let project = '';
+for (const obj of projects) {
+  const tech = obj.technologies;
+  project += `<div class="grid-item project">
+    <div class="item-image">
+        <img src="${obj.image}" alt="featured-image">
+    </div>
+    <div class="item-description">
+        <div class="item-title">
+            <h2>${obj.title}</h2>
+        </div>
+       <ul class="technologies">
+          <li> <a href="#">${tech[0]}</a></li>
+          <li> <a href="#">${tech[1]}</a></li>
+          <li> <a href="#">${tech[2]}</a></li>
+          <li> <a href="#">${tech[3]}</a></li>
+      </ul>
+      <div class="green-btn">
+        <a href="" data-modal-target="#project-modal" class="viewProject">See Project</a>
+    </div>
+   </div>
+</div>`;
+}
 
 document.querySelector('.projects').innerHTML = project;
 
