@@ -54,6 +54,16 @@ form.addEventListener('submit', (event) => {
 
 const projects = [
   {
+    title: 'Math Game',
+    description:
+      'A Javascript game application that is both interactive and supports mobile devices. The game allows a player to provide a random number between 1-20, if a user provides the correct number, he wins with high marks, if a user provides a wrong number, the game advises the player as to whether the number provided is higher or lower than the hidden correct number.',
+    featuredImage: 'images/featuredguess.png',
+    image: 'images/featuredguesss.png',
+    teachnologies: ['Bootstrap', 'Jest', 'Selenium', 'Javascript'],
+    versionURL: 'https://github.com/Alfred-KInyua/play-a-game-',
+    sourceURL: 'https://dancing-gnome-b2b6e0.netlify.app/',
+  },
+  {
     title: 'Bookstore Application',
     description:
       'An online bookstore delivery app that allows bookstore owners and authors to add, retrieve and delete books from a remote REST API.(CRUD)',
@@ -105,16 +115,6 @@ const projects = [
     teachnologies: ['Bootstrap', 'jest', 'ReactJs', 'Redux'],
     versionURL: 'https://github.com/Alfred-KInyua',
     sourceURL: 'https://mellifluous-custard-8f3222.netlify.app/',
-  },
-  {
-    title: 'Math Game',
-    description:
-      'A Javascript game application that is both interactive and supports mobile devices. The game allows a player to provide a random number between 1-20, if a user provides the correct number, he wins with high marks, if a user provides a wrong number, the game advises the player as to whether the number provided is higher or lower than the hidden correct number.',
-    featuredImage: 'images/featuredguess.png',
-    image: 'images/featuredguesss.png',
-    teachnologies: ['Bootstrap', 'Jest', 'Selenium', 'Javascript'],
-    versionURL: 'https://github.com/Alfred-KInyua/play-a-game-',
-    sourceURL: 'https://dancing-gnome-b2b6e0.netlify.app/',
   },
 ];
 
