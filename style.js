@@ -62,7 +62,7 @@ const projects = [
       'A Javascript game application that is both interactive and supports mobile devices. The game allows a player to provide a random number between 1-20, if a user provides the correct number, he wins with high marks, if a user provides a wrong number, the game advises the player as to whether the number provided is higher or lower than the hidden correct number.',
     featuredImage: 'images/featuredguess.png',
     image: 'images/featuredguesss.png',
-    teachnologies: ['Bootstrap', 'Jest', 'Selenium', 'Javascript'],
+    technologies: ['Bootstrap', 'Jest', 'Selenium', 'Javascript'],
     versionURL: 'https://github.com/Alfred-KInyua/play-a-game-',
     sourceURL: 'https://dancing-gnome-b2b6e0.netlify.app/',
   },
@@ -72,7 +72,7 @@ const projects = [
       'An online bookstore delivery app that allows bookstore owners and authors to add, retrieve and delete books from a remote REST API.(CRUD)',
     featuredImage: 'images/featuredbook.png',
     image: 'images/featuredbooks.png',
-    teachnologies: ['Bootstrap', 'RSpec', 'HTML', 'JavaScript'],
+    technologies: ['Bootstrap', 'RSpec', 'HTML', 'JavaScript'],
     versionURL: 'https://github.com/Alfred-KInyua/bookstore-website',
     sourceURL:
       'https://deploy-preview-6--endearing-hamster-aaf349.netlify.app/',
@@ -83,7 +83,7 @@ const projects = [
       'An application that fetches data via a RESTful API service, and provides data such as population, the capital city, and coat of arms in a simple and elegant design',
     featuredImage: 'images/counts.png',
     image: 'images/green.png',
-    teachnologies: ['Bootstrap', 'Jest', 'Selenium', 'ReactJs'],
+    technologies: ['Bootstrap', 'Jest', 'Selenium', 'ReactJs'],
     versionURL: 'https://github.com/Alfred-KInyua/rest-countries',
     sourceURL:
       'https://deploy-preview-1--precious-rabanadas-551da9.netlify.app/',
@@ -94,7 +94,7 @@ const projects = [
       'Build a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and join selected space missions. the webiste uses real live data from the SpaceX API.',
     featuredImage: 'images/spacetravel.png',
     image: 'images/spacet.png',
-    teachnologies: ['Redux Toolkit', 'JavaScript', 'Babel', 'ReactJs'],
+    technologies: ['Redux Toolkit', 'JavaScript', 'Babel', 'ReactJs'],
     versionURL: 'https://github.com/Alfred-KInyua/spacetravellorshub',
     sourceURL: 'https://deploy-preview-56--cute-cranachan-7538ff.netlify.app/',
   },
@@ -104,7 +104,7 @@ const projects = [
       'A JavaScript project for the Leaderboard list app. The game captures players" scores and stores them in local storage for persistence. The scores are arranged from highest to lowest.  This app was developed using the provided Wireframe, with styling data, focused on functionality',
     featuredImage: './images/featuredLeader.png',
     image: 'images/featuredLeaderr.png',
-    teachnologies: ['Bootstrap', 'RSpec', 'Jest', 'JavaScript'],
+    technologies: ['Bootstrap', 'RSpec', 'Jest', 'JavaScript'],
     versionURL: 'https://github.com/Alfred-KInyua/Leaderboard-setup-project',
     sourceURL:
       'https://630759fc00a34408cef91404--luminous-kitten-cfcb1a.netlify.app/',
@@ -115,12 +115,12 @@ const projects = [
       'A react single page application that allows employers or team managers to group their teams according to tasks given, this will ensure all team managers are aware of team members activities and groups they belong to',
     featuredImage: 'images/teams.png',
     image: 'images/teamsOne.png',
-    teachnologies: ['Bootstrap', 'jest', 'ReactJs', 'Redux'],
+    technologies: ['Bootstrap', 'jest', 'ReactJs', 'Redux'],
     versionURL: 'https://github.com/Alfred-KInyua',
     sourceURL: 'https://mellifluous-custard-8f3222.netlify.app/',
   },
 ];
-const projectHTML = projects.map((obj) => {
+const projectHTML = projects.maps((obj) => {
   const tech = obj.technologies;
   return `<div class="grid-item project">
     <div class="item-image">
@@ -147,7 +147,7 @@ const project = projectHTML.join('');
 
 // let project = '';
 // for (const obj of projects) {
-//   const tech = obj.teachnologies;
+//   const tech = obj.technologies;
 //   project += `<div class="grid-item project">
 //     <div class="item-image">
 //         <img src="${obj.image}" alt="featured-image">
@@ -205,10 +205,10 @@ document.querySelectorAll('.viewProject').forEach((button, key) => {
                </ul>
              </div>
              <ul class="frameworks">
-             <li>${proj.teachnologies[0]}</li>
-             <li>${proj.teachnologies[1]}</li>
-             <li>${proj.teachnologies[2]}</li>
-             <li>${proj.teachnologies[3]}</li>
+             <li>${proj.technologies[0]}</li>
+             <li>${proj.technologies[1]}</li>
+             <li>${proj.technologies[2]}</li>
+             <li>${proj.technologies[3]}</li>
              </ul>
              <div class="project-description">
                <p>${proj.description}</p>
