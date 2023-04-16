@@ -7,7 +7,10 @@ const barHandler = () => {
   bar.className += ' barWhite';
 };
 
-bar.addEventListener('click', () => barHandler);
+// bar.addEventListener('click', () => barHandler);
+bar.addEventListener('click', () => {
+  barHandler();
+});
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
