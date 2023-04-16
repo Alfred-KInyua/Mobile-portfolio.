@@ -57,14 +57,14 @@ form.addEventListener('submit', (event) => {
 
 const projects = [
   {
-    title: 'Math Game',
+    title: 'GPT3 OPEN-AI',
     description:
-      'A Javascript game application that is both interactive and supports mobile devices. The game allows a player to provide a random number between 1-20, if a user provides the correct number, he wins with high marks, if a user provides a wrong number, the game advises the player as to whether the number provided is higher or lower than the hidden correct number.',
-    featuredImage: 'images/featuredguess.png',
-    image: 'images/featuredguesss.png',
-    technologies: ['Bootstrap', 'Jest', 'Selenium', 'Javascript'],
-    versionURL: 'https://github.com/Alfred-KInyua/play-a-game-',
-    sourceURL: 'https://dancing-gnome-b2b6e0.netlify.app/',
+      'A react web application that highlights some strengths of GPT-3, in a nutshell, GPT-3 (Generative Pre-trained Transformer 3) is a state-of-the-art language model developed by OpenAI. It is based on the Transformer architecture and has over 175 billion parameters, making it one of the largest and most powerful language models ever created.',
+    featuredImage: 'images/gpt3r.png',
+    image: 'images/gpt3r.png',
+    technologies: ['ReactJs', 'Jest', 'CSS', 'Javascript'],
+    versionURL: 'git@github.com:Alfred-KInyua/GPT-3-OPEN-AI.git',
+    sourceURL: 'https://silly-taiyaki-573844.netlify.app/',
   },
   {
     title: 'Bookstore Application',
@@ -120,35 +120,9 @@ const projects = [
     sourceURL: 'https://mellifluous-custard-8f3222.netlify.app/',
   },
 ];
-// const projectHTML = projects.map((obj) => {
-//   const tech = obj.technologies;
-//   return `<div class="grid-item project">
-//     <div class="item-image">
-//         <img src="${obj.image}" alt="featured-image">
-//     </div>
-//     <div class="item-description">
-//         <div class="item-title">
-//             <h2>${obj.title}</h2>
-//         </div>
-//        <ul class="technologies">
-//           <li> <a href="#">${tech[0]}</a></li>
-//           <li> <a href="#">${tech[1]}</a></li>
-//           <li> <a href="#">${tech[2]}</a></li>
-//           <li> <a href="#">${tech[3]}</a></li>
-//       </ul>
-//       <div class="green-btn">
-//         <a href="" data-modal-target="#project-modal" class="viewProject">See Project</a>
-//     </div>
-//    </div>
-// </div>`;
-// });
-
-// const project = projectHTML.join('');
-
-let project = '';
-for (const obj of projects) {
+const projectHTML = projects.map((obj) => {
   const tech = obj.technologies;
-  project += `<div class="grid-item project">
+  return `<div class="grid-item project">
     <div class="item-image">
         <img src="${obj.image}" alt="featured-image">
     </div>
@@ -167,7 +141,33 @@ for (const obj of projects) {
     </div>
    </div>
 </div>`;
-}
+});
+
+const project = projectHTML.join('');
+
+// let project = '';
+// for (const obj of projects) {
+//   const tech = obj.technologies;
+//   project += `<div class="grid-item project">
+//     <div class="item-image">
+//         <img src="${obj.image}" alt="featured-image">
+//     </div>
+//     <div class="item-description">
+//         <div class="item-title">
+//             <h2>${obj.title}</h2>
+//         </div>
+//        <ul class="technologies">
+//           <li> <a href="#">${tech[0]}</a></li>
+//           <li> <a href="#">${tech[1]}</a></li>
+//           <li> <a href="#">${tech[2]}</a></li>
+//           <li> <a href="#">${tech[3]}</a></li>
+//       </ul>
+//       <div class="green-btn">
+//         <a href="" data-modal-target="#project-modal" class="viewProject">See Project</a>
+//     </div>
+//    </div>
+// </div>`;
+// }
 
 document.querySelector('.projects').innerHTML = project;
 
