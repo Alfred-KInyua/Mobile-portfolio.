@@ -59,7 +59,7 @@ const projects = [
   {
     title: 'GPT3 OPEN-AI',
     description:
-      'A react web application that highlights some strengths of GPT-3, in a nutshell, GPT-3 (Generative Pre-trained Transformer 3) is a state-of-the-art language model developed by OpenAI. It is based on the Transformer architecture and has over 175 billion parameters, making it one of the largest and most powerful language models ever created.',
+      'A react web application that highlights some strengths of GPT-3. In a nutshell, GPT-3 (Generative Pre-trained Transformer 3) is a state-of-the-art language model developed by OpenAI. It is based on the Transformer architecture and has over 175 billion parameters, making it one of the largest and most powerful language models ever created.',
     featuredImage: 'images/gpt3r.png',
     image: 'images/gpt3r.png',
     technologies: ['ReactJs', 'Jest', 'CSS', 'Javascript'],
