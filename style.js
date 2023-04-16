@@ -181,7 +181,7 @@ document.querySelectorAll('.viewProject').forEach((button, key) => {
 
     const proj = projects[key];
 
-    div = `<div class="modal-header">
+    const div = `<div class="modal-header">
              <span class="close">&times;</span>
             </div>
             <div class="modal-body">
