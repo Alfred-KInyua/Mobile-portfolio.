@@ -120,7 +120,7 @@ const projects = [
     sourceURL: 'https://mellifluous-custard-8f3222.netlify.app/',
   },
 ];
-const projectHTML = projects.maps((obj) => {
+const projectHTML = projects.map((obj) => {
   const tech = obj.technologies;
   return `<div class="grid-item project">
     <div class="item-image">
