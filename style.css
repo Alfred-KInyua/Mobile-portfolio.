@@ -211,10 +211,6 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.barWhite {
-  background-color: #1a1b1b;
-}
-
 .hamburger.active .bar:nth-child(1) {
   -webkit-transform: translateY(8px) rotate(45deg);
           transform: translateY(8px) rotate(45deg);
