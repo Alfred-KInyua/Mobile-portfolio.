@@ -84,7 +84,6 @@
 }
 
 body {
-  background-color: #040c18;
   color: #fff;
   font-family: Inter, sans-serif;
 }
@@ -278,16 +277,16 @@ body {
   margin: 24px auto;
   font-size: 1.2rem;
 }
+.social-icons ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
 
 .social-icons {
   align-items: center;
   text-align: center;
   margin: 24px auto;
-}
-
-.social-icons ul {
-  list-style-type: none;
-  display: flex;
 }
 
 .social-icons a i {

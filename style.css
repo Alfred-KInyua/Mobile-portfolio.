@@ -78,7 +78,6 @@
 }
 
 body {
-  background-color: #040c18;
   color: #fff;
   font-family: Inter, sans-serif;
 }
@@ -300,19 +299,22 @@ body {
   font-size: 1.2rem;
 }
 
+.social-icons ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .social-icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
   margin: 24px auto;
-}
-
-.social-icons ul {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .social-icons a i {
