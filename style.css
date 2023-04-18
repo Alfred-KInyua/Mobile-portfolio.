@@ -78,6 +78,7 @@
 }
 
 body {
+  background-color: #040c18;
   color: #fff;
   font-family: Inter, sans-serif;
 }
@@ -98,7 +99,6 @@ body {
 }
 
 .container {
-  background-color: #233329;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +195,7 @@ body {
 
 .hamburger {
   cursor: pointer;
-  color: #1a1b1b;
+  color: #fff;
   display: none;
 }
 
@@ -218,7 +218,7 @@ body {
 .hamburger.active .bar:nth-child(1) {
   -webkit-transform: translateY(8px) rotate(45deg);
           transform: translateY(8px) rotate(45deg);
-  background-color: #1a1b1b;
+  background-color: #fff;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -228,7 +228,7 @@ body {
 .hamburger.active .bar:nth-child(3) {
   -webkit-transform: translateY(-8px) rotate(-45deg);
           transform: translateY(-8px) rotate(-45deg);
-  background-color: #1a1b1b;
+  background-color: #fff;
 }
 
 .overlay.active {
@@ -237,7 +237,7 @@ body {
   width: 100%;
   position: fixed;
   z-index: 1;
-  background-color: #fff;
+  background-color: #040c18;
   border-radius: 5%;
   -webkit-box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
           box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -288,7 +288,6 @@ body {
 .icon {
   height: 30px;
   width: 30px;
-  opacity: 75%;
 }
 
 .title {
@@ -321,6 +320,7 @@ body {
 }
 
 .social-icons a i {
+  color: #fff;
   height: 20px;
   width: 18px;
   margin: 0 21px;
@@ -372,7 +372,6 @@ body {
 
 .grid-item {
   border: 3px solid #d6d5da;
-  background-color: #d3f7e944;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,7 +426,6 @@ body {
 
 .frameworks li {
   padding: 10px;
-  background-color: #000;
   text-align: center;
   margin: 5px 5px;
   font-size: 0.65rem;
@@ -547,7 +545,6 @@ body {
 }
 
 .item-icon {
-  background-color: #000;
   border-radius: 50%;
   margin: 30px auto;
   -webkit-box-pack: center;
@@ -583,7 +580,6 @@ body {
 
 .item-langs li {
   padding: 10px;
-  background-color: #000;
   color: #fff;
   text-align: center;
   margin: 5px 5px;
@@ -774,7 +770,6 @@ body {
 .close {
   margin-top: 20px;
   color: #fff;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,7 +781,6 @@ body {
           justify-content: center;
   width: 40px;
   height: 40px;
-  background: #000;
   border-radius: 8px;
   float: right;
   right: 24px;
@@ -799,7 +793,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #c1c7d0;
+  background: #040c18;
   opacity: 0;
   pointer-events: none;
   z-index: 5;
@@ -894,7 +888,7 @@ body {
 }
 
 .menu.active li a {
-  color: #344563;
+  color: #fff;
   text-decoration: none;
   font-style: normal;
   font-weight: 600;
@@ -902,8 +896,11 @@ body {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1440px) {
+  .gradient__bg {
+    /* safari 5.1+,chrome 10+ */
+    background: radial-gradient(circle at 3% 25%, #002853 0%, #040c18 100%);
+  }
   .container {
-    background-color: #233329;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -916,7 +913,7 @@ body {
             align-items: center;
   }
   .toolbar {
-    background: #233329;
+    background: #040c18;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -954,7 +951,7 @@ body {
     width: 100%;
   }
   .section-bg-image {
-    background-color: #233329;
+    background-image: url(images/header-bg.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -999,6 +996,7 @@ body {
             align-items: center;
     text-align: center;
     margin: 24px auto;
+    color: #fff;
   }
   .social-icons ul {
     list-style-type: none;
@@ -1136,7 +1134,6 @@ body {
        object-fit: contain;
   }
   .item-icon {
-    background-color: #000;
     border-radius: 50%;
     margin: 30px auto;
     -webkit-box-pack: center;
@@ -1169,7 +1166,6 @@ body {
   }
   .item-langs li {
     padding: 10px;
-    background-color: #000;
     color: #fff;
     text-align: center;
     margin: 5px 5px;
@@ -1422,7 +1418,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .toolbar {
-    background: #233329;
+    background: #040c18;
   }
   .one,
   .two {
@@ -1525,11 +1521,10 @@ body {
     height: 40px;
     right: 0;
     top: 0;
-    background: #000;
     border-radius: 8px;
     float: right;
     position: absolute;
-    color: #fff;
+    color: #000;
   }
   .project-image {
     display: -webkit-box;

@@ -182,7 +182,7 @@ document.querySelectorAll('.viewProject').forEach((button, key) => {
     const proj = projects[key];
 
     const div = `<div class="modal-header">
-             <span class="close">&times;</span>
+             <span class="close gradient__bg">&times;</span>
             </div>
             <div class="modal-body">
              <div class="project-image">
