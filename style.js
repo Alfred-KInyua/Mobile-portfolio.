@@ -67,15 +67,14 @@ const projects = [
     sourceURL: 'https://silly-taiyaki-573844.netlify.app/',
   },
   {
-    title: 'Bookstore Application',
+    title: 'E-commerce Application',
     description:
-      'An online bookstore delivery app that allows bookstore owners and authors to add, retrieve and delete books from a remote REST API.(CRUD)',
-    featuredImage: 'images/featuredbook.png',
-    image: 'images/featuredbooks.png',
-    technologies: ['Bootstrap', 'RSpec', 'HTML', 'JavaScript'],
-    versionURL: 'https://github.com/Alfred-KInyua/bookstore-website',
-    sourceURL:
-      'https://deploy-preview-6--endearing-hamster-aaf349.netlify.app/',
+      'The app is an ecommerce site built using VITE, React, and TypeScript. It allows users to buy products online. VITE is used to make the site fast and responsive, while React is used to create reusable UI components that are easy to maintain and update. TypeScript is used to add static typing and other features to the code to make it more robust. Overall, the app is a modern and efficient ecommerce solution that provides a great user experience for customers.',
+    featuredImage: 'images/rawaki.png',
+    image: 'images/rawa.png',
+    technologies: ['Bootstrap', 'VITE', 'React', 'TypeScript'],
+    versionURL: 'git@github.com:Alfred-KInyua/ecommerce-site-.git',
+    sourceURL: 'https://rawaki.netlify.app/',
   },
   {
     title: 'Fetch a list of countries data from an API request ',
