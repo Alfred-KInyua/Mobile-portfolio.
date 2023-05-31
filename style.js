@@ -98,15 +98,14 @@ const projects = [
     sourceURL: 'https://deploy-preview-56--cute-cranachan-7538ff.netlify.app/',
   },
   {
-    title: 'Leaderboard App',
+    title: 'Geritch Hotel',
     description:
-      'A JavaScript project for the Leaderboard list app. The game captures players" scores and stores them in local storage for persistence. The scores are arranged from highest to lowest.  This app was developed using the provided Wireframe, with styling data, focused on functionality',
-    featuredImage: './images/featuredLeader.png',
-    image: 'images/featuredLeaderr.png',
-    technologies: ['Bootstrap', 'RSpec', 'Jest', 'JavaScript'],
-    versionURL: 'https://github.com/Alfred-KInyua/Leaderboard-setup-project',
-    sourceURL:
-      'https://630759fc00a34408cef91404--luminous-kitten-cfcb1a.netlify.app/',
+      'This is a React project that is highly modular with a reusable codebase. I used a number of React-specific tools and libraries, including styled Components, and leveraged server-side rendering using Next.js for improved performance and SEO. The site is highly responsive and optimized for different screen sizes, thanks to the use of responsive design techniques such as media queries and Flexbox.',
+    featuredImage: './images/geritch.png',
+    image: 'images/geritchSmall.png',
+    technologies: ['ReactJs', 'Jest', 'NodeJs', 'JSX'],
+    versionURL: 'git@github.com:Alfred-KInyua/geritch-hotel.git',
+    sourceURL: 'https://main--silly-dodol-693145.netlify.app/',
   },
   {
     title: 'Team Viewer ',
