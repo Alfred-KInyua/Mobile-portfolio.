@@ -73,7 +73,7 @@ const projects = [
     featuredImage: 'images/rawaki11.png',
     image: 'images/rawaki111.png',
     technologies: ['Bootstrap', 'VITE', 'React', 'TypeScript'],
-    versionURL: 'git@github.com:Alfred-KInyua/ecommerce-site-.git',
+    versionURL: 'https://github.com/Alfred-KInyua/ecommerce-site-.git',
     sourceURL: 'https://rawaki.netlify.app/',
   },
   {
